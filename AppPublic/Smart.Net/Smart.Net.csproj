@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D97AF183-D3AB-4E8F-A6C7-30319118A8E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Smart.Net45</RootNamespace>
+    <AssemblyName>Smart.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>NU1605</NoWarn>
+    <WarningsAsErrors>NU1605</WarningsAsErrors>
+    <DocumentationFile>bin\Debug\Smart.Net.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=18f031bd02e5e291, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.International.Converters.PinYinConverter.1.0.0\lib\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JWT.3.0.1\lib\net35\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\IIS.Microsoft.Web.Administration.8.5.9600.17042\lib\Microsoft.Web.Administration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.1.2.6\lib\net45\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.SelfHost, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.SelfHost.5.2.4\lib\net45\System.Web.Http.SelfHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attribute\CacheAttribute.cs" />
+    <Compile Include="Attribute\DbTableAttribute.cs" />
+    <Compile Include="Attribute\EnumDescription.cs" />
+    <Compile Include="Attribute\EnumDescription.Static.cs" />
+    <Compile Include="CheckSum\Adler32.cs" />
+    <Compile Include="CheckSum\Crc32.cs" />
+    <Compile Include="CheckSum\CrcFactory.cs" />
+    <Compile Include="CheckSum\ICheckSum.cs" />
+    <Compile Include="CheckSum\StrangeCrc.cs" />
+    <Compile Include="Consts\RegexStrings.cs" />
+    <Compile Include="Consts\SmartConsts.cs" />
+    <Compile Include="Dapper\DapperExtend.cs" />
+    <Compile Include="Dapper\PagingHelper.cs" />
+    <Compile Include="Enum\ClaimKinds.cs" />
+    <Compile Include="Enum\CrcAlgorithmKinds.cs" />
+    <Compile Include="Enum\DataBaseType.cs" />
+    <Compile Include="Enum\EllipsisKinds.cs" />
+    <Compile Include="Enum\HashAlgorithmKinds.cs" />
+    <Compile Include="Enum\Netkinds.cs" />
+    <Compile Include="Enum\PinYinKinds.cs" />
+    <Compile Include="Enum\RegexKinds.cs" />
+    <Compile Include="Enum\StatesKinds.cs" />
+    <Compile Include="Enum\StateStatic.cs" />
+    <Compile Include="ExpressionVisitor\Evaluator.cs" />
+    <Compile Include="ExpressionVisitor\ExpressionHelper.cs" />
+    <Compile Include="ExpressionVisitor\ExpressionParameterizedSqlWriter.cs" />
+    <Compile Include="ExpressionVisitor\ExpressionSqlWriter.cs" />
+    <Compile Include="ExpressionVisitor\ExpressionVisitor.cs" />
+    <Compile Include="Extends\ByteExtends.cs" />
+    <Compile Include="Extends\CharExtends.cs" />
+    <Compile Include="Extends\DataRowExtends.cs" />
+    <Compile Include="Extends\DataTableExends.cs" />
+    <Compile Include="Extends\DateTimeExtends.cs" />
+    <Compile Include="Extends\EnumerableExtends.cs" />
+    <Compile Include="Extends\EnumExtends.cs" />
+    <Compile Include="Extends\ExpressionToSql.cs" />
+    <Compile Include="Extends\FileHelper.cs" />
+    <Compile Include="Extends\IDataReaderExtends.cs" />
+    <Compile Include="Extends\ImageExtends.cs" />
+    <Compile Include="Extends\ListExtension.cs" />
+    <Compile Include="Extends\MethodExtends.cs" />
+    <Compile Include="Extends\ObjectExtends.cs" />
+    <Compile Include="Extends\ObjectMapper.cs" />
+    <Compile Include="Extends\PropertyExtends.cs" />
+    <Compile Include="Extends\StreamExtends.cs" />
+    <Compile Include="Extends\StringExtend.cs" />
+    <Compile Include="Extends\TypeExtends.cs" />
+    <Compile Include="FastReflection\Cache\ConstructorInvokerCache.cs" />
+    <Compile Include="FastReflection\Cache\FastReflectionCache.cs" />
+    <Compile Include="FastReflection\Cache\FastReflectionCaches.cs" />
+    <Compile Include="FastReflection\Cache\FieldAccessorCache.cs" />
+    <Compile Include="FastReflection\Cache\IFastReflectionCache.cs" />
+    <Compile Include="FastReflection\Cache\MethodInvokerCache.cs" />
+    <Compile Include="FastReflection\Cache\PropertyAccessorCache.cs" />
+    <Compile Include="FastReflection\Constructor\ConstructorInvoker.cs" />
+    <Compile Include="FastReflection\Constructor\ConstructorInvokerFactory.cs" />
+    <Compile Include="FastReflection\Factory\FastReflectionFactories.cs" />
+    <Compile Include="FastReflection\Factory\IFastReflectionFactory.cs" />
+    <Compile Include="FastReflection\FastReflectionExtensions.cs" />
+    <Compile Include="FastReflection\Field\FieldAccessor.cs" />
+    <Compile Include="FastReflection\Field\FieldAccessorFactory.cs" />
+    <Compile Include="FastReflection\Method\MethodInvoker.cs" />
+    <Compile Include="FastReflection\Method\MethodInvokerFactory.cs" />
+    <Compile Include="FastReflection\Property\PropertyAccessor.cs" />
+    <Compile Include="FastReflection\Property\PropertyAccessorFactory.cs" />
+    <Compile Include="Helper\AppSettingHelper.cs" />
+    <Compile Include="Helper\ArgumentGuard.cs" />
+    <Compile Include="Helper\CryptoHelper.cs" />
+    <Compile Include="Helper\DateTimeHelper.cs" />
+    <Compile Include="Helper\HashAlgorithmHelper.cs" />
+    <Compile Include="Helper\HttpRequestHelper.cs" />
+    <Compile Include="Helper\HttpRequestMessageExtensions.cs" />
+    <Compile Include="Helper\IISHelper.cs" />
+    <Compile Include="Helper\LunarDateTimeHelper.cs" />
+    <Compile Include="Helper\PinYinHelper.cs" />
+    <Compile Include="Helper\RedisHelper.cs" />
+    <Compile Include="Helper\SerilizeHelper.cs" />
+    <Compile Include="Helper\SqlHelper.cs" />
+    <Compile Include="Helper\StreamByteImageHelper.cs" />
+    <Compile Include="Helper\ThreadMultiHelper.cs" />
+    <Compile Include="Helper\TsqlHelper.cs" />
+    <Compile Include="Helper\WebApiHost.cs" />
+    <Compile Include="Helper\ZipHelper.cs" />
+    <Compile Include="Interface\IDependency.cs" />
+    <Compile Include="Interface\IKey.cs" />
+    <Compile Include="Model\ApplicationModel.cs" />
+    <Compile Include="Model\ApplicationPoolModel.cs" />
+    <Compile Include="Model\BindModel.cs" />
+    <Compile Include="Model\PageResult.cs" />
+    <Compile Include="Model\SiteModel.cs" />
+    <Compile Include="ParseProviders\IParseProvider.cs" />
+    <Compile Include="ParseProviders\JsonParseProvider.cs" />
+    <Compile Include="ParseProviders\ParserFactory.cs" />
+    <Compile Include="ParseProviders\XmlParseProvider.cs" />
+    <Compile Include="Patterns\MsDispose.cs" />
+    <Compile Include="Pipes\IO\PipeStreamReader.cs" />
+    <Compile Include="Pipes\IO\PipeStreamWrapper.cs" />
+    <Compile Include="Pipes\IO\PipeStreamWriter.cs" />
+    <Compile Include="Pipes\NamedPipeClient.cs" />
+    <Compile Include="Pipes\NamedPipeConnection.cs" />
+    <Compile Include="Pipes\NamedPipeServer.cs" />
+    <Compile Include="Pipes\PipeExceptionEventHandler.cs" />
+    <Compile Include="Pipes\PipeWorker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Pipes\Readme.md" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET DllPath=$(SolutionDir)..\Assembly\
+xcopy "$(TargetPath)" "%25DllPath%25$(TargetFileName)" /E /C /Y /R /U
+xcopy "$(TargetDir)$(TargetName).XML" "%25DllPath%25$(TargetName).XML" /E /C /Y /R /U</PostBuildEvent>
+  </PropertyGroup>
+</Project>

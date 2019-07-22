@@ -1,0 +1,4850 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Smart.Win</name>
+    </assembly>
+    <members>
+        <member name="T:Smart.Win.BackgroundLoader">
+            <summary>
+            后台加载
+            </summary>
+        </member>
+        <member name="M:Smart.Win.BackgroundLoader.#ctor(System.Action,System.Action)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="doWork">加载动作内容</param>
+            <param name="completedWork">完成后内容</param>
+        </member>
+        <member name="T:Smart.Win.Builders.ConfigFormBuilder">
+            <summary>
+            创建配置管理的窗体
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Builders.ConfigFormBuilder._abmConfigUc">
+            <summary>
+            窗体用户控件
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Builders.ConfigFormBuilder._viewControl">
+            <summary>
+            _viewControl
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Builders.ConfigFormBuilder._tabCaption">
+            <summary>
+            左边菜单标题
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Builders.ConfigFormBuilder._isSelected">
+            <summary>
+            左边菜单是否选中
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Builders.ConfigFormBuilder._tabIndex">
+            <summary>
+            左边菜单tabindex
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Builders.ConfigFormBuilder.SetTabItemCaption(System.String)">
+            <summary>
+            设置左边菜单的标题
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Builders.ConfigFormBuilder.SetSelected">
+            <summary>
+            设置左边菜单是否选中
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Builders.ConfigFormBuilder.SetTabIndex(System.Int32)">
+            <summary>
+            设置左边菜单的tabindex
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Builders.ConfigFormBuilder.AddConfigForm(DevExpress.XtraBars.Ribbon.BackstageViewControl,DevExpress.XtraEditors.XtraUserControl)">
+            <summary>
+            添加配置窗体
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Builders.ConfigFormBuilder.Builder">
+            <summary>
+            生成窗体
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.BasicExportModel`1">
+            <summary>
+            地区信息导出模型
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.BasicExportModel`1.TextTitle">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.BasicExportModel`1.DataHead">
+            <summary>
+            数据表头
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.BasicExportModel`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.BasicExportModel`1.TextFoot">
+            <summary>
+            页脚
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.BasicExportModel`1.TextHead">
+            <summary>
+            页眉
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.BasicExportModel`1.SetDataHead(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置数据源标头
+            </summary>
+            <param name="gridView"></param>
+        </member>
+        <member name="T:Smart.Win.Controls.BasicExportReport">
+            <summary>
+            基本导出报表
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.BasicExportReport.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.BasicExportReport.InitReport``1(Smart.Win.Controls.BasicExportModel{``0})">
+            <summary>
+            初始化导出报表
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="F:Smart.Win.Controls.BasicExportReport.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.BasicExportReport.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.BasicExportReport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.ButtonEditUC">
+            <summary>
+            ButtonEdit控件
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.ButtonEditUC.SetCanDeleteValue">
+            <summary>
+            设置响应删除事件
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.ButtonEditUC.SetisSelectable">
+            <summary>
+            设置是否可以选择样式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.ButtonEditUC.SetValueStyle">
+            <summary>
+            值得样式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.ButtonEditUC._buttonEdit_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            删除
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:Smart.Win.Controls.ButtonEditUC.CustomUseDeleteStyle">
+            <summary>
+            选中的对象是否使用删除样式
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.ButtonEditUC.CustomCanDeleteValue">
+            <summary>
+            按键Delete清楚选择值是否可用
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.ButtonEditUC.CustomIsSelectable">
+            <summary>
+            选择按钮是否可用，双击文本框是否可用
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.FlyingForm">
+            <summary>
+            浮动消息层
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.FlyingForm.IconTextSpacing">
+            <summary>
+            图标和文本之间的间距（像素）
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.BasePoint">
+            <summary>
+            基准点。用于指导本窗体显示位置
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.TipIcon">
+            <summary>
+            提示图标
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.TipText">
+            <summary>
+            提示文本
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.Delay">
+            <summary>
+            停留时长（毫秒）
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.Floating">
+            <summary>
+            是否允许浮动
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.SourcePoint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.TargetPoint">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.SourceSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.TargetSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.Image">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.Speed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.FlyingForm.ShowWithoutActivation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.FlyingForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.FlyingForm.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.FlyingForm.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.FlyingForm.GetPaddedRectangle">
+            <summary>
+            获取刨去Padding的内容区
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.FlyingForm.Dispose(System.Boolean)">
+            <inheritdoc />
+            <summary>
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.FlyingForm.Fly(System.Drawing.Point,System.Drawing.Point,System.Drawing.Size,System.Drawing.Size,System.Drawing.Image,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sourcePoint"></param>
+            <param name="targetPoint"></param>
+            <param name="sourceSize"></param>
+            <param name="targetSize"></param>
+            <param name="image"></param>
+            <param name="speed"></param>
+        </member>
+        <member name="T:Smart.Win.Controls.GlassButton">
+            <summary>
+            ͸����ť
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.GlassButton.#ctor">
+            <summary>
+            ͸����ť
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.GlassButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.FontsStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.FontSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.IconTransparency">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.ButtonText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.GlassButton.ButtonTextAlign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.Up">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.Down">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.UpperLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.UpperRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.BottomLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.BottomRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextAlign.Center">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.TextAlign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.TextSpacingX">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.TextSpacingY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.GlassButton.IconBitmapAlign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.Up">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.Down">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.UpperLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.UpperRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.BottomLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.BottomRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.IconBitmapAlign.Center">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.IconAlign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.IconSpacingX">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.IconSpacingY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.GlassButton.ButtonTextImageRelation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextImageRelation.ImageAboveText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.ButtonTextImageRelation.TextAboveImage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.TextImageRelation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.mouseOnColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.MouseOn_Colors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.mouseDownColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.MouseDown_Colors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.Normal_Colors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.disabledColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.GlassButton.DisabledColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.GlassButton.CMouseLeave">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.GlassButton.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.GlassButton.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.GlassButton.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenu">
+            <summary>
+            Ribbon菜单
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenu.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenu.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenu.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenu.OnPaintGrip(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenu.DrawArc(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenu.Deflate(System.Drawing.Rectangle)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenuShadow">
+            <summary>
+            Ribbon菜单阴影
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuShadow.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuShadow.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuShadow.DrawArc(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenuButton">
+            <summary>
+            Ribbon按钮
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.BackColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.OnCreateControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenuButton.e_imagelocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_imagelocation.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_imagelocation.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_imagelocation.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_imagelocation.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_imagelocation.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ImageLocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ImageOffset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.MaxImageSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenuButton.e_showbase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_showbase.Yes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_showbase.No">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ShowBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.Radius">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenuButton.e_groupPos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_groupPos.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_groupPos.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_groupPos.Center">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_groupPos.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_groupPos.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_groupPos.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.GroupPos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenuButton.e_arrow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_arrow.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_arrow.ToRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_arrow.ToDown">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.Arrow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenuButton.e_splitbutton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_splitbutton.No">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuButton.e_splitbutton.Yes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.SplitButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.SplitDistance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.KeepPress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.IsPressed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.MenuPos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ColorBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ColorOn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ColorPress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ColorBaseStroke">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ColorOnStroke">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.ColorPressStroke">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.GetColorIncreased(System.Drawing.Color,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="color"></param>
+            <param name="h"></param>
+            <param name="s"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.GetColor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="A"></param>
+            <param name="R"></param>
+            <param name="G"></param>
+            <param name="B"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="pevent"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.OnResize(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.Dispose(System.Boolean)">
+            <summary>
+            释放由 <see cref="T:System.Windows.Forms.ButtonBase"/> 占用的非托管资源，还可以另外再释放托管资源。
+            </summary>
+            <param name="disposing">为 true 则释放托管资源和非托管资源；为 false 则仅释放非托管资源。</param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.FillGradients(System.Drawing.Graphics,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.DrawImage(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.DrawString(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.DrawArc(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.DrawShadow(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.DrawArrow(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.FillSplit(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonMenuButton.FadingSpeed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.OnMouseEnter(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.OnMouseLeave(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.UpdateLeave">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mevent"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mevent"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuButton.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mevent"></param>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.#ctor(System.Drawing.Color)">
+            <summary>
+            
+            </summary>
+            <param name="color"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.#ctor(System.UInt32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="alpha"></param>
+            <param name="hue"></param>
+            <param name="saturation"></param>
+            <param name="brightness"></param>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonColor.AC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonColor.RC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonColor.GC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonColor.BC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.GetColor">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.GetRed">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.GetGreen">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.GetBlue">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonColor.HC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonColor.SC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.RibbonColor.VC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonColor.C">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonColor.C.Red">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonColor.C.Green">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonColor.C.Blue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonColor.C.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.CMax">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.CMin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.GetBrightness">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.GetSaturation">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.GetHue">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.IsDark">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.IncreaseBrightness(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.SetBrightness(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.IncreaseHue(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.SetHue(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.IncreaseSaturation(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.SetSaturation(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonColor.IncreaseHSV(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="h"></param>
+            <param name="s"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Smart.Win.Controls.RibbonMenuRenderer">
+            <summary>
+            Ribbon菜单呈现
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.RibbonMenuRenderer.StrokeColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuRenderer.OnRenderMenuItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuRenderer.OnRenderItemImage(System.Windows.Forms.ToolStripItemImageRenderEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuRenderer.OnRenderToolStripBorder(System.Windows.Forms.ToolStripRenderEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuRenderer.DrawArc(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuRenderer.Deflate(System.Drawing.Rectangle)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.RibbonMenuRenderer.GetColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="R"></param>
+            <param name="G"></param>
+            <param name="B"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Smart.Win.Controls.SplashForm2">
+            <summary>
+            加载窗体
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashForm2.#ctor(System.Action,System.Boolean)">
+            <summary>
+            加载窗体
+            </summary>
+            <param name="work">后台任务</param>
+            <param name="acceptNotify">是否接受通知</param>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashForm2.InitForm(System.Drawing.Icon,System.Drawing.Bitmap,System.Drawing.Bitmap,System.String,System.String)">
+            <summary>
+            初始化窗体
+            </summary>
+            <param name="icon">窗体图标</param>
+            <param name="productImg">产品图片</param>
+            <param name="corpImg">企业图片</param>
+            <param name="copyright">版权</param>
+            <param name="loadText">加载文字</param>
+        </member>
+        <member name="F:Smart.Win.Controls.SplashForm2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashForm2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashForm2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.PagerUC">
+            <summary>
+            分页控件
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.PagerUC.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.PagerUC.PageSizeAllow">
+            <summary>
+            允许每页显示条数
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.PagerUC.SetPageSizeAllow(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            设置分页条数下拉框
+            </summary>
+            <param name="sizeList">分页条数列表</param>
+        </member>
+        <member name="P:Smart.Win.Controls.PagerUC.PageSize">
+            <summary>
+            每页显示条数
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.PagerUC.SetPagerParameter(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设置分页参数
+            </summary>
+            <param name="totalRecord">数据总条数</param>
+            <param name="pageSize">每页大小</param>
+            <param name="pageIndex">当前页码</param>
+        </member>
+        <member name="P:Smart.Win.Controls.PagerUC.TotalRecord">
+            <summary>
+            总记录条数
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.PagerUC.PageCount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.PagerUC.PageIndex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.PagerUC.SetButtonState">
+            <summary>
+            设置控件状态
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.PagerUC.ResetControl">
+            <summary>
+            初始化控件状态
+            </summary>
+        </member>
+        <member name="E:Smart.Win.Controls.PagerUC.PageChanged">
+            <summary>
+            页改变事件
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.PagerUC.OnPageChanged">
+            <summary>
+            激发页面改变事件
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.PagerUC.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.PagerUC.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.PagerUC.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.LoadingCircle">
+            <summary>
+            Loading控件
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle">
+            <summary>
+            Loading控件样式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.#ctor">
+            <summary>
+             Loading控件样式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Color)">
+            <summary>
+             Loading控件样式
+            </summary>
+            <param name="innerCircleRadius">内半径</param>
+            <param name="outerCircleRadius">外半径</param>
+            <param name="numberSpoke">点数</param>
+            <param name="spokeThickness">点厚度</param>
+            <param name="circleColor">圆圈颜色</param>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.InnerCircleRadius">
+            <summary>
+            内半径
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.OuterCircleRadius">
+            <summary>
+            外半径
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.NumberSpoke">
+            <summary>
+            点数
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.SpokeThickness">
+            <summary>
+            点厚度
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.CircleColor">
+            <summary>
+            圆圈颜色
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.Active">
+            <summary>
+            是否激活
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.BackColor">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.RotationSpeed">
+            <summary>
+            旋转速度
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.LoadingCircleStyle.CircleStyle">
+            <summary>
+            样式
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.LoadingCircle.StylePresets">
+            <summary>
+            呈现样式
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.LoadingCircle.StylePresets.MacOSX">
+            <summary>
+            MacOSX
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.LoadingCircle.StylePresets.Firefox">
+            <summary>
+            Firefox
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.LoadingCircle.StylePresets.IE7">
+            <summary>
+            IE7
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Controls.LoadingCircle.StylePresets.Custom">
+            <summary>
+            Custom
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.Color">
+            <summary>
+            Gets or sets the lightest color of the circle.
+            </summary>
+            <value>The lightest color of the circle.</value>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.OuterCircleRadius">
+            <summary>
+            Gets or sets the outer circle radius.
+            </summary>
+            <value>The outer circle radius.</value>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.InnerCircleRadius">
+            <summary>
+            Gets or sets the inner circle radius.
+            </summary>
+            <value>The inner circle radius.</value>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.NumberSpoke">
+            <summary>
+            Gets or sets the number of spoke.
+            </summary>
+            <value>The number of spoke.</value>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.Active">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:LoadingCircle"/> is active.
+            </summary>
+            <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.SpokeThickness">
+            <summary>
+            Gets or sets the spoke thickness.
+            </summary>
+            <value>The spoke thickness.</value>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.RotationSpeed">
+            <summary>
+            Gets or sets the rotation speed.
+            </summary>
+            <value>The rotation speed.</value>
+        </member>
+        <member name="P:Smart.Win.Controls.LoadingCircle.StylePreset">
+            <summary>
+            Quickly sets the style to one of these presets, or a custom style if desired
+            </summary>
+            <value>The style preset.</value>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LoadingCircle"/> class.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.LoadingCircle_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Resize event of the LoadingCircle control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.aTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Tick event of the aTimer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.Paint"></see> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Retrieves the size of a rectangular area into which a control can be fitted.
+            </summary>
+            <param name="proposedSize">The custom-sized area for a control.</param>
+            <returns>
+            An ordered pair of type <see cref="T:System.Drawing.Size"></see> representing the width and height of a rectangle.
+            </returns>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.Darken(System.Drawing.Color,System.Int32)">
+            <summary>
+            Darkens a specified color.
+            </summary>
+            <param name="_objColor">Color to darken.</param>
+            <param name="_intPercent">The percent of darken.</param>
+            <returns>The new color generated.</returns>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.GenerateColorsPallet">
+            <summary>
+            Generates the colors pallet.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.GenerateColorsPallet(System.Drawing.Color,System.Boolean,System.Int32)">
+            <summary>
+            Generates the colors pallet.
+            </summary>
+            <param name="_objColor">Color of the lightest spoke.</param>
+            <param name="_blnShadeColor">if set to <c>true</c> the color will be shaded on X spoke.</param>
+            <param name="_intNbSpoke"></param>
+            <returns>An array of color used to draw the circle.</returns>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.GetControlCenterPoint">
+            <summary>
+            Gets the control center point.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.GetControlCenterPoint(System.Windows.Forms.Control)">
+            <summary>
+            Gets the control center point.
+            </summary>
+            <returns>PointF object</returns>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.DrawLine(System.Drawing.Graphics,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.Color,System.Int32)">
+            <summary>
+            Draws the line with GDI+.
+            </summary>
+            <param name="_objGraphics">The Graphics object.</param>
+            <param name="_objPointOne">The point one.</param>
+            <param name="_objPointTwo">The point two.</param>
+            <param name="_objColor">Color of the spoke.</param>
+            <param name="_intLineThickness">The thickness of spoke.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.GetCoordinate(System.Drawing.PointF,System.Int32,System.Double)">
+            <summary>
+            Gets the coordinate.
+            </summary>
+            <param name="_objCircleCenter">The Circle center.</param>
+            <param name="_intRadius">The radius.</param>
+            <param name="_dblAngle">The angle.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.GetSpokesAngles">
+            <summary>
+            Gets the spokes angles.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.GetSpokesAngles(System.Int32)">
+            <summary>
+            Gets the spoke angles.
+            </summary>
+            <param name="spokeNum">The number spoke.</param>
+            <returns>An array of angle.</returns>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.ActiveTimer">
+            <summary>
+            Actives the timer.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.SetCircleAppearance(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the circle appearance.
+            </summary>
+            <param name="numberSpoke">The number spoke.</param>
+            <param name="spokeThickness">The spoke thickness.</param>
+            <param name="innerCircleRadius">The inner circle radius.</param>
+            <param name="outerCircleRadius">The outer circle radius.</param>
+        </member>
+        <member name="F:Smart.Win.Controls.LoadingCircle.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.LoadingCircle.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="T:Smart.Win.Controls.SplashForm">
+            <summary>
+            加载窗体
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashForm.#ctor(System.Action,System.Drawing.Icon)">
+            <summary>
+            加载窗体
+            </summary>
+            <param name="work"></param>
+            <param name="icon">窗体图标</param>
+        </member>
+        <member name="F:Smart.Win.Controls.SplashForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.SplashNoticeMsgEventHandler">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="T:Smart.Win.Controls.SplashNotice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Smart.Win.Controls.SplashNotice.SplashNoticeMsg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashNotice.Notice(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="E:Smart.Win.Controls.SplashNotice.FinishWork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.SplashNotice.OnFinishWork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.WaitForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.WaitForm.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="F:Smart.Win.Controls.WaitForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.WaitForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.WaitForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Controls.WaitUC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.WaitUC.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="F:Smart.Win.Controls.WaitUC.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Controls.WaitUC.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Smart.Win.Controls.WaitUC.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Entities.BeaktipOptions">
+            <summary>
+            Beaktip选项
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.BeaktipOptions.#ctor">
+            <summary>
+            Beaktip选项
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.BeaktipOptions.TipPosition">
+            <summary>
+            Tip显示位置
+            <para>Tip显示位置和Beak显示方向正好想法</para>
+            <para>需要为显示控件预留足够的显示空间，否则控件会自动计算显示方向</para>
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.BeaktipOptions.#ctor(DevExpress.Utils.FlyoutPanel)">
+            <summary>
+            Beaktip选项
+            </summary>
+            <param name="fPanel">要显示的<see cref="T:DevExpress.Utils.FlyoutPanel"/>控件</param>
+        </member>
+        <member name="P:Smart.Win.Entities.BeaktipOptions.TipPanel">
+            <summary>
+            要显示的<see cref="T:DevExpress.Utils.FlyoutPanel"/>控件
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.BeaktipOptions.ToString">
+            <summary>
+            重写ToString
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.BeaktipOptions.BeakPosition2TipPosition(DevExpress.Utils.BeakPanelBeakLocation)">
+            <summary>
+            BeakPosition转TipPosition
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.BeaktipOptions.TipPosition2BeakPosition(Smart.Win.Enums.PositionEnum)">
+            <summary>
+            TipPosition转BeakPosition
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Entities.ToastKindOptions">
+            <summary>
+            提醒信息类型选项
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.ToastKindOptions.#ctor">
+            <summary>
+            提醒信息类型选项
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.ToastKindOptions.#ctor(Smart.Win.Enums.ToastKinds)">
+            <summary>
+            提醒信息类型选项
+            </summary>
+            <param name="kind"></param>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastKindOptions.FontColor">
+            <summary>
+            文字颜色
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastKindOptions.BackColor">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastKindOptions.IconImage">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Entities.ToastOptions">
+            <summary>
+            提醒信息选项
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.ToastOptions.NewInstance">
+            <summary>
+            获取<see cref="T:Smart.Win.Entities.ToastOptions"/>默认新实例
+            </summary>
+            <returns><see cref="T:Smart.Win.Entities.ToastOptions"/>默认新实例</returns>
+        </member>
+        <member name="M:Smart.Win.Entities.ToastOptions.NewInstance(Smart.Win.Enums.ToastKinds)">
+            <summary>
+            获取<see cref="T:Smart.Win.Entities.ToastOptions"/>默认新实例
+            </summary>
+            <param name="kind">消息类型</param>
+            <returns><see cref="T:Smart.Win.Entities.ToastOptions"/>默认新实例</returns>
+        </member>
+        <member name="M:Smart.Win.Entities.ToastOptions.#ctor">
+            <summary>
+            提醒信息选项
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entities.ToastOptions.#ctor(Smart.Win.Enums.ToastKinds)">
+            <summary>
+            提醒信息选项
+            </summary>
+            <param name="kind">消息类型</param>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastOptions.KindOptions">
+            <summary>
+            提醒消息类型选项
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastOptions.Anchor">
+            <summary>
+            消息显示位置
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastOptions.AnimationKind">
+            <summary>
+            动画类型
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastOptions.CloseOnOuterClick">
+            <summary>
+            外部点击关闭
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastOptions.PositionX">
+            <summary>
+            X坐标位置（左上角）
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastOptions.PositionY">
+            <summary>
+             Y坐标位置（左上角）
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entities.ToastOptions.CustomPosition">
+            <summary>
+            Anchor为Manual时是使用的自定义位置
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Entitys.IdTextData">
+            <summary>
+            ID-Text-Data，用于Combo绑定
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.IdTextData.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.IdTextData.Text">
+            <summary>
+            显示文字
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.IdTextData.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entitys.IdTextData.GetData``1">
+            <summary>
+            获取数据
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Entitys.IdTextData.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Entitys.IdTextData.GetTypeCode">
+            <summary>
+            GetTypeCode
+            </summary>
+            <returns><see cref="T:System.TypeCode"/></returns>
+        </member>
+        <member name="T:Smart.Win.Entitys.IdTextValueData`1">
+            <summary>
+            ID-Text-Data，用于Combo绑定
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.IdTextValueData`1.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.IdTextValueData`1.Text">
+            <summary>
+            显示文字
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.IdTextValueData`1.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.IdTextValueData`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Entitys.IdTextValueData`1.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Smart.Win.Entitys.TimestampData`1">
+            <summary>
+            时间戳数据
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.TimestampData`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Entitys.TimestampData`1.Timestamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Enums.ColumnViewKinds">
+            <summary>
+            BaseView类型枚举
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ColumnViewKinds.GridView">
+            <summary>
+            GridView
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ColumnViewKinds.BandedGridView">
+            <summary>
+            BandedGridView
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ColumnViewKinds.AdvBandedGridView">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ColumnViewKinds.LayoutView">
+            <summary>
+            LayoutView
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ColumnViewKinds.CardView">
+            <summary>
+            CardView
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ColumnViewKinds.TileView">
+            <summary>
+            TileView
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ColumnViewKinds.WinExplorerView">
+            <summary>
+            WinExplorerView
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ColumnViewKinds.ColumnView">
+            <summary>
+            ColumnView
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Enums.ToastKinds">
+            <summary>
+            Toast类型
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ToastKinds.Info">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ToastKinds.Warning">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ToastKinds.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.ToastKinds.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Enums.PositionEnum">
+            <summary>
+            位置枚举
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.PositionEnum.Top">
+            <summary>
+            上
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.PositionEnum.Right">
+            <summary>
+            右
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.PositionEnum.Bottom">
+            <summary>
+            下
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Enums.PositionEnum.Left">
+            <summary>
+            左
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Extends.ImageOptionsExtends">
+            <summary>
+            图标选项扩展
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ImageOptionsExtends.SetSvgIcon(DevExpress.Utils.ImageOptions,DevExpress.Utils.Svg.SvgImage,System.Int32,System.Int32)">
+            <summary>
+            设置SVG图标
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ImageOptionsExtends.SetSvgIconPosition(DevExpress.XtraEditors.SimpleButtonImageOptions,DevExpress.XtraEditors.ImageAlignToText,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+            <param name="align"></param>
+            <param name="indent"></param>
+        </member>
+        <member name="T:Smart.Win.Extends.BeaktipOptionsExtends">
+            <summary>
+            FlyoutPanel控件扩展
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.BeaktipOptionsExtends.UnbindBeak(System.Windows.Forms.Control)">
+            <summary>
+            移除Beaktip绑定
+            </summary>
+            <param name="hoverCtr">Hover控件</param>
+        </member>
+        <member name="M:Smart.Win.Extends.BeaktipOptionsExtends.BindBeak(Smart.Win.Entities.BeaktipOptions,System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>
+            绑定Beaktip
+            </summary>·
+            <param name="options">
+            <para>Beak显示选项：</para>
+            <para>BeakLocation:显示位置</para>
+            <para>AnimationType:动画类型</para>
+            <para>BackColor:背景色</para>
+            <para>BorderColor:边框色</para>
+            <para>CloseOnOuterClick:外部点击关闭</para>
+            </param>
+            <param name="hoverCtr">Hover控件</param>
+            <param name="contentCtr">要显示的控件</param>
+        </member>
+        <member name="M:Smart.Win.Extends.BeaktipOptionsExtends.HoverControlMouseEnter(System.Object,System.EventArgs)">
+            <summary>
+            鼠标移入
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.BeaktipOptionsExtends.GetBeakPoint(System.Windows.Forms.Control,Smart.Win.Entities.BeaktipOptions)">
+            <summary>
+            取得Beak显示点
+            </summary>
+            <param name="ctr">要显示的控件</param>
+            <param name="options">显示选项</param>
+            <returns><see cref="T:System.Drawing.Point"/>Beak显示点</returns>
+        </member>
+        <member name="T:Smart.Win.Extends.ColumnViewExtends">
+            <summary>
+            ColumnView辅助类
+            </summary>
+            <summary>
+            ColumnView辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.GetViewKind(DevExpress.XtraGrid.Views.Base.ColumnView)">
+            <summary>
+            获取View类型
+            </summary>
+            <param name="view"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/></param>
+            <returns><see cref="T:Smart.Win.Enums.ColumnViewKinds"/>枚举值</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.GetFocusData``1(DevExpress.XtraGrid.Views.Base.ColumnView)">
+            <summary>
+            取Grid选中数据
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.BindPopup``1(DevExpress.XtraGrid.Views.Base.ColumnView,DevExpress.XtraBars.PopupMenu,Smart.Win.Helpers.BaseHitInfoModelPredicate{``0})">
+            <summary>
+            绑定行右键弹出菜单
+            </summary>
+            <param name="view">表格</param>
+            <param name="popup">弹出菜单</param>
+            <param name="beforeShow">显示前处理</param>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.UnbindPopup``1(DevExpress.XtraGrid.Views.Base.ColumnView,DevExpress.XtraBars.PopupMenu)">
+            <summary>
+            解绑右键菜单
+            </summary>
+            <param name="view">表格</param>
+            <param name="popup">弹出菜单</param>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.ToGridView(DevExpress.XtraGrid.Views.Base.ColumnView,System.Boolean)">
+            <summary>
+            转换为GridView
+            </summary>
+            <param name="view"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/></param>
+            <param name="throwException">是否抛出异常</param>
+            <returns><see cref="T:DevExpress.XtraGrid.Views.Grid.GridView"/>实例，不抛出异常，则转换失败返回null</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.ToBandedGridView(DevExpress.XtraGrid.Views.Base.ColumnView,System.Boolean)">
+            <summary>
+            转换为 BandedGridView
+            </summary>
+            <param name="view"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/></param>
+            <param name="throwException">是否抛出异常</param>
+            <returns><see cref="T:DevExpress.XtraGrid.Views.BandedGrid.BandedGridView"/>实例，不抛出异常，则转换失败返回null</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.ToAdvBandedGridView(DevExpress.XtraGrid.Views.Base.ColumnView,System.Boolean)">
+            <summary>
+            转换为AdvBandedGridView
+            </summary>
+            <param name="view"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/></param>
+            <param name="throwException">是否抛出异常</param>
+            <returns><see cref="T:DevExpress.XtraGrid.Views.BandedGrid.AdvBandedGridView"/>实例，不抛出异常，则转换失败返回null</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.ToLayoutView(DevExpress.XtraGrid.Views.Base.ColumnView,System.Boolean)">
+            <summary>
+            转换为LayoutView
+            </summary>
+            <param name="view"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/></param>
+            <param name="throwException">是否抛出异常</param>
+            <returns><see cref="T:DevExpress.XtraGrid.Views.Layout.LayoutView"/>实例，不抛出异常，则转换失败返回null</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.ToCardView(DevExpress.XtraGrid.Views.Base.ColumnView,System.Boolean)">
+            <summary>
+            转换为CardView
+            </summary>
+            <param name="view"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/></param>
+            <param name="throwException">是否抛出异常</param>
+            <returns><see cref="T:DevExpress.XtraGrid.Views.Card.CardView"/>实例，不抛出异常，则转换失败返回null</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.ToTileView(DevExpress.XtraGrid.Views.Base.ColumnView,System.Boolean)">
+            <summary>
+            转换为TileView
+            </summary>
+            <param name="view"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/></param>
+            <param name="throwException">是否抛出异常</param>
+            <returns><see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/>实例，不抛出异常，则转换失败返回null</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.ToWinExplorerView(DevExpress.XtraGrid.Views.Base.ColumnView,System.Boolean)">
+            <summary>
+            转换为WinExplorerView
+            </summary>
+            <param name="view"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/></param>
+            <param name="throwException">是否抛出异常</param>
+            <returns><see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/>实例，不抛出异常，则转换失败返回null</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.SetTag(DevExpress.XtraGrid.Views.Base.ColumnView,System.String,System.Object)">
+            <summary>
+            设置控件Tag
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.GetTag(DevExpress.XtraGrid.Views.Base.ColumnView,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.GetTag``1(DevExpress.XtraGrid.Views.Base.ColumnView,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+            <typeparam name="T">Tag数据类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Extends.ColumnViewExtends.RemoveTag(DevExpress.XtraGrid.Views.Base.ColumnView,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="T:Smart.Win.Extends.LabelControlExtends">
+            <summary>
+            标签控件扩展
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.LabelControlExtends.AddRequireRedStar(DevExpress.XtraEditors.LabelControl,Smart.Win.Enums.PositionEnum)">
+            <summary>
+            添加必填红星
+            </summary>
+            <param name="labelControl"></param>
+            <param name="position"></param>
+        </member>
+        <member name="T:Smart.Win.Extends.RepositoryItemExtends">
+            <summary>
+            ColumnView辅助类
+            </summary>
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.RepositoryItemExtends.SetTag(DevExpress.XtraEditors.Repository.RepositoryItem,System.String,System.Object)">
+            <summary>
+            设置控件Tag
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.RepositoryItemExtends.GetTag(DevExpress.XtraEditors.Repository.RepositoryItem,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:Smart.Win.Extends.RepositoryItemExtends.GetTag``1(DevExpress.XtraEditors.Repository.RepositoryItem,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+            <typeparam name="T">Tag数据类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Extends.RepositoryItemExtends.RemoveTag(DevExpress.XtraEditors.Repository.RepositoryItem,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:Smart.Win.Extends.RepositoryItemExtends.AutoHeight(DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit,System.Boolean)">
+            <summary>
+            自动高度
+            </summary>
+            <param name="memoItem">表格控件</param>
+            <param name="autoHeight">是否自动行高度，默认true</param>
+        </member>
+        <member name="M:Smart.Win.Extends.RepositoryItemExtends.AutoHeight(DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit)">
+            <summary>
+            自动高度
+            </summary>
+            <param name="pictureItem">表格控件</param>
+        </member>
+        <member name="M:Smart.Win.Extends.RepositoryItemExtends.PictureHeight(DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit,System.Int32)">
+            <summary>
+            自动高度
+            </summary>
+            <param name="pictureItem">表格控件</param>
+            <param name="height">图片高度</param>
+        </member>
+        <member name="T:Smart.Win.Extends.ToastOptionsExtends">
+            <summary>
+            <see cref="T:Smart.Win.Entities.ToastOptions"/>实例扩展
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ToastOptionsExtends.ShowToastMessage(Smart.Win.Entities.ToastOptions,System.String,System.Windows.Forms.Form)">
+            <summary>
+            显示Toast消息
+            </summary>
+            <param name="option">选项</param>
+            <param name="msg">消息</param>
+            <param name="parentForm">父窗体</param>
+        </member>
+        <member name="M:Smart.Win.Extends.ToastOptionsExtends.ShowToastControl(Smart.Win.Entities.ToastOptions,System.Windows.Forms.Control,System.Windows.Forms.Form)">
+            <summary>
+            显示Toast消息
+            </summary>
+            <param name="option">选项</param>
+            <param name="ctr">控件</param>
+            <param name="parentForm">父窗体</param>
+        </member>
+        <member name="T:Smart.Win.Extends.TreeListNodeExtends">
+            <summary>
+            TreeListNode扩展类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListNodeExtends.SetTag(DevExpress.XtraTreeList.Nodes.TreeListNode,System.String,System.Object)">
+            <summary>
+            设置控件Tag
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListNodeExtends.GetTag(DevExpress.XtraTreeList.Nodes.TreeListNode,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListNodeExtends.GetTag``1(DevExpress.XtraTreeList.Nodes.TreeListNode,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+            <typeparam name="T">Tag数据类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListNodeExtends.RemoveTag(DevExpress.XtraTreeList.Nodes.TreeListNode,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="T:Smart.Win.Extends.ControlExtends">
+            <summary>
+            Control扩展类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ControlExtends.ShowPopupBottom(System.Windows.Forms.Control,DevExpress.XtraBars.PopupMenu)">
+            <summary>
+            显示弹出菜单
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ControlExtends.SetTag(System.Windows.Forms.Control,System.String,System.Object)">
+            <summary>
+            设置控件Tag
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.ControlExtends.GetTag(System.Windows.Forms.Control,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:Smart.Win.Extends.ControlExtends.GetTag``1(System.Windows.Forms.Control,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+            <typeparam name="T">Tag数据类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Extends.ControlExtends.RemoveTag(System.Windows.Forms.Control,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="T:Smart.Win.Extends.GridControlExtends">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridControlExtends.GetBindList``1(DevExpress.XtraGrid.GridControl)">
+            <summary>
+            取Grid选中数据
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridControlExtends.BindCopyToCtrlC(DevExpress.XtraGrid.GridControl,DevExpress.XtraGrid.Columns.GridColumn[])">
+            <summary>
+            绑定CtrlC
+            </summary>
+            <param name="gridControl"></param>
+            <param name="columns"></param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridControlExtends.RegisteGridCellHint``1(DevExpress.XtraGrid.GridControl,System.Func{DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo,System.Boolean},System.Func{``0,System.String},System.Func{DevExpress.XtraGrid.Views.Grid.GridView,System.Int32,DevExpress.XtraGrid.Columns.GridColumn,System.String})">
+            <summary>
+            向Grid注册提示信息
+            </summary>
+            <typeparam name="TEntity">grid绑定的实体类型</typeparam>
+            <param name="gridControl">要注册的Grid</param>
+            <param name="showTipsCondition">显示提示信息的条件</param>
+            <param name="getCellHintText">获取显示文本的委托</param>
+            <param name="getCellHintTitle">获取显示标题的委托，如果为空则显示列标题</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridControlExtends.RegisteGridCellHint(DevExpress.XtraGrid.GridControl,System.Func{DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo,System.Boolean},System.Func{DevExpress.XtraGrid.Views.Grid.GridView,System.Int32,DevExpress.XtraGrid.Columns.GridColumn,System.String},System.Func{DevExpress.XtraGrid.Views.Grid.GridView,System.Int32,DevExpress.XtraGrid.Columns.GridColumn,System.String})">
+            <summary>
+            向Grid注册单元格中的提示信息
+               用户可根据表格，列，行来指定提示内容
+            </summary>
+            <param name="gridControl">要注册的Grid</param>
+            <param name="showTipsCondition">显示提示信息的条件</param>
+            <param name="getCellHintText">获取显示文本的委托</param>
+            <param name="getCellHintTitle">获取显示标题的委托，如果为空则显示列标题</param>
+        </member>
+        <member name="T:Smart.Win.Extends.GridColumnExtends">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridColumnExtends.FixColumnWidth(DevExpress.XtraGrid.Columns.GridColumn,System.Int32)">
+            <summary>
+            固定列宽
+            </summary>
+            <param name="column">列</param>
+            <param name="width">宽度</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridColumnExtends.AutoColumnWidth(DevExpress.XtraGrid.Columns.GridColumn,System.Int32)">
+            <summary>
+            固定列宽
+            </summary>
+            <param name="column">列</param>
+            <param name="width">宽度</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridColumnExtends.CenterText(DevExpress.XtraGrid.Columns.GridColumn,System.Boolean,System.Boolean)">
+            <summary>
+            居中文字
+            </summary>
+            <param name="column">列</param>
+            <param name="centerHeader">列头居中否</param>
+            <param name="centerCell">列单元格居中否</param>
+        </member>
+        <member name="T:Smart.Win.Extends.BarExtends">
+            <summary>
+            Bar扩展类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.BarExtends.DockToGroup(DevExpress.XtraBars.Bar,DevExpress.XtraEditors.GroupControl,System.Windows.Forms.DockStyle)">
+            <summary>
+            停靠到GroupControl
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.BarExtends.DockToPanel(DevExpress.XtraBars.Bar,DevExpress.XtraEditors.PanelControl,System.Windows.Forms.DockStyle)">
+            <summary>
+            停靠到PanelControl
+            </summary>
+            <param name="bar">Toolbar控件</param>
+            <param name="panel">Panel控件</param>
+            <param name="dock">Dock位置</param>
+        </member>
+        <member name="M:Smart.Win.Extends.BarExtends.SetStandaloneStyle(DevExpress.XtraBars.Bar)">
+            <summary>
+            设置Bar样式
+            </summary>
+            <param name="bar"><see cref="T:DevExpress.XtraBars.Bar"/>控件</param>
+        </member>
+        <member name="M:Smart.Win.Extends.BarExtends.DockToContainer(DevExpress.XtraBars.Bar,DevExpress.Utils.Controls.PanelBase,System.Windows.Forms.DockStyle)">
+            <summary>
+            停靠到容器
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Extends.GridViewExtends">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.AutoRowHeight(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean)">
+            <summary>
+            自动行高度
+            </summary>
+            <param name="view">表格</param>
+            <param name="autoHeight">是否自动行高度，默认true</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetBorder(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean)">
+            <summary>
+            设置边框
+            </summary>
+            <param name="view">表格</param>
+            <param name="showBorder">是否显示边框</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.DrawRowIndicator(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SelectXtraGridRow(DevExpress.XtraGrid.Views.Grid.GridView,Smart.Net45.Interface.IKey)">
+            <summary>
+            选中GridView对应Key的行,如果不存在则选中第一行
+            </summary>
+            <param name="gv">GridView控件</param>
+            <param name="key">要选中的Key</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SelectXtraGridRow(DevExpress.XtraGrid.Views.Grid.GridView,System.String)">
+            <summary>
+            选中GridView对应Key的行,如果不存在则选中第一行
+            </summary>
+            <param name="gv">GridView控件</param>
+            <param name="keyToSelect">要选中的Key</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetColumnSortable(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraGrid.Columns.GridColumn[])">
+            <summary>
+            设置Grid的列排序是否启用，默认禁用
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="columns">设置为启用排序的列</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.ShowGroupColumn(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置Grid的列排序是否启用，默认禁用
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.OfficeStyle(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置GridView为Office样式
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.ExpandMasterRow(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            在主从视图展开/折叠所有主视图的行
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.CollapseMasterRow(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            在主从视图展开/折叠所有主视图的行
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetMasterRowExpanded(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean)">
+            <summary>
+            在主从视图展开/折叠所有主视图的行
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="expand">是否展开</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.RowCheckBoxMultiSelect(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            CheckBox多选支持
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.GetSelectDatas``1(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            获取选中的数据
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="gridView">表格</param>
+            <returns>选中数据列表</returns>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.RowCheckBoxSelect(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            CheckBox多选支持
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="multiSelect"></param>
+            <param name="showCheckInColumn"></param>
+            <param name="showCheckInGroup"></param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean,System.Boolean,DevExpress.XtraGrid.Columns.GridColumn[])">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean,System.Boolean)">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraGrid.Columns.GridColumn[])">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean)">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.SetRowHeight(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.BindRowDoubleClick``1(DevExpress.XtraGrid.Views.Grid.GridView,System.Action{``0})">
+            <summary>
+            行双击
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="action">事件处理器</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.UnbindRowDoubleClick``1(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            解绑行双击
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.BindPopupMenu``1(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraBars.PopupMenu,System.Predicate{``0})">
+            <summary>
+            绑定行右键弹出菜单
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="popup">弹出菜单</param>
+            <param name="beforeShow">显示前处理</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.UnbindPopupMenu``1(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraBars.PopupMenu)">
+            <summary>
+            解绑右键菜单
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="popup">弹出菜单</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.AutoWidth(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            自动宽度
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:Smart.Win.Extends.GridViewExtends.BestWidth(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            最优宽度
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="T:Smart.Win.Extends.TreeListExtends">
+            <summary>
+            XtraTree扩展类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.SetRowHeight(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            设置TreeList行高
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.SetBorder(DevExpress.XtraTreeList.TreeList,System.Boolean)">
+            <summary>
+            设置边框
+            </summary>
+            <param name="tree">树表格</param>
+            <param name="showBorder">是否显示边框</param>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.GetFocusData``1(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            初始化TreeList筛选器
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.GetTreeDatas``1(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            初始化TreeList筛选器
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.FilterInit(DevExpress.XtraTreeList.TreeList,DevExpress.XtraEditors.TextEdit,System.Boolean)">
+            <summary>
+            初始化TreeList筛选器
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.FilterText(DevExpress.XtraTreeList.TreeList,System.String)">
+            <summary>
+            TreeList筛选文字
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.FilterClear(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            清除TreeList筛选
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.BindPopup``1(DevExpress.XtraTreeList.TreeList,DevExpress.XtraBars.PopupMenu,System.Predicate{``0})">
+            <summary>
+            为TreeList绑定PopupMenu
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Extends.TreeListExtends.SetStyle(DevExpress.XtraTreeList.TreeList,System.Boolean,DevExpress.XtraTreeList.Columns.TreeListColumn[])">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.ColumnViewPopupHelper`1">
+            <summary>
+            ColumnView右键菜单辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ColumnViewPopupHelper`1.BindPopupMenu(DevExpress.XtraGrid.Views.Base.ColumnView,DevExpress.XtraBars.PopupMenu,Smart.Win.Helpers.BaseHitInfoModelPredicate{`0})">
+            <summary>
+            绑定弹出右键菜单到树，此方法只支持一个树上注册一个PopupMenu
+            </summary>
+            <param name="view"></param>
+            <param name="popup"></param>
+            <param name="showPredicate">谓词委托，返回true显示右键，false不显示</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ColumnViewPopupHelper`1.UnbindPopupMenu(DevExpress.XtraGrid.Views.Base.ColumnView,DevExpress.XtraBars.PopupMenu)">
+            <summary>
+            解绑右键弹出菜单
+            </summary>
+            <param name="view">GridView控件</param>
+            <param name="popup">右键弹出菜单</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.BaseHitInfoModelPredicate`1">
+            <summary>
+            有 HitInfo 和 模型两个参数的谓词委托
+            </summary>
+            <typeparam name="T">模型类型</typeparam>
+            <param name="model">模型</param>
+            <param name="columnView"><see cref="T:DevExpress.XtraGrid.Views.Base.ColumnView"/>当前View</param>
+            <param name="hitInfo"><see cref="T:DevExpress.XtraGrid.Views.Base.ViewInfo.BaseHitInfo"/>信息</param>
+            <returns>是否通过</returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.StartScreen.SkinAppearance">
+            <summary>
+            SkinAppearance
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreen.SkinAppearance.FontDictionary">
+            <summary>
+            字体缓存字典
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreen.SkinAppearance.FontFamily">
+            <summary>
+            FontFamily
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreen.SkinAppearance.LabelAndCaptionInLayoutColor">
+            <summary>
+            Skin中的Label、Caption颜色
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreen.SkinAppearance.ApplyFont(DevExpress.Utils.AppearanceObject)">
+            <summary>
+            应用字体
+            </summary>
+            <param name="appearanceObject"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreen.SkinAppearance.ApplyFont(DevExpress.Utils.AppearanceObject,System.Boolean)">
+            <summary>
+            应用字体
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreen.SkinAppearance.GetFontKey(System.Drawing.Font)">
+            <summary>
+            取得字体字典键
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreen.SkinAppearance.GetFontKeyForFontFamily(System.Drawing.Font,System.Boolean)">
+            <summary>
+            取得FontFamily字体键
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreen.SkinAppearance.GetSkinFont(System.Drawing.Font)">
+            <summary>
+            取得皮肤字体
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreen.SkinAppearance.GetSkinFont(System.Drawing.Font,System.Boolean)">
+            <summary>
+            取得皮肤字体
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.StartScreen.StartScreenImagePainter">
+            <summary>
+            自定义启动图绘制器
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreen.StartScreenImagePainter.DefaultFont">
+            <summary>
+            默认字体
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreen.StartScreenImagePainter.FontBrush">
+            <summary>
+            字体笔刷
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreen.StartScreenImagePainter.Draw(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle)">
+            <summary>
+            绘制信息
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.StartScreen.StartScreenTextPainter">
+            <summary>
+            加载中文字 图片绘制器
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreen.StartScreenTextPainter.Counter">
+            <summary>
+            绘制计数器
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreen.StartScreenTextPainter.DefaultFont">
+            <summary>
+            默认字体
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreen.StartScreenTextPainter.FontBrush">
+            <summary>
+            字体刷
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreen.StartScreenTextPainter.DevExpress#XtraSplashScreen#ICustomImagePainter#Draw(DevExpress.Utils.Drawing.GraphicsCache,System.Drawing.Rectangle)">
+            <summary>
+            绘制加载文字
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.StartScreenManager">
+            <summary>
+            启动画面管理器
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreenManager.CloseWaitImage">
+            <summary>
+            关闭等待图
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreenManager.ShowWaitForm">
+            <summary>
+            显示等待窗体
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreenManager.ShowWaitForm(System.Windows.Forms.Form)">
+            <summary>
+            显示等待窗体
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreenManager.ShowLoadingImage(System.Drawing.Image)">
+            <summary>
+            显示加载中
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.StartScreenManager.ShowStartupImage(System.Drawing.Image)">
+            <summary>
+            显示启动图
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Helpers.StartScreenManager.WaitTimer">
+            <summary>
+            计时器
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.ToastMessageHelper">
+            <summary>
+            提示消息帮助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ToastMessageHelper.ShowToastMessage(Smart.Win.Entities.ToastOptions,System.Windows.Forms.Form,System.String)">
+            <summary>
+            显示Toast
+            </summary>
+            <param name="option">消息选项</param>
+            <param name="parentForm">父窗体</param>
+            <param name="msg">显示消息</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ToastMessageHelper.ShowControlToast(Smart.Win.Entities.ToastOptions,System.Windows.Forms.Form,System.Windows.Forms.Control)">
+            <summary>
+            显示Toast
+            </summary>
+            <param name="option">消息选项</param>
+            <param name="parentForm">父窗体</param>
+            <param name="ctr">显示控件</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.BarHelper">
+            <summary>
+            Bar辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.BarHelper.SetToolBarStyle(DevExpress.XtraBars.Bar)">
+            <summary>
+            设置Toolbar的样式
+            </summary>
+            <param name="toolBar"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.BarHelper.SetBarStaticButtonLength(DevExpress.XtraBars.BarStaticItem,System.Int32)">
+            <summary>
+            设置用于填充空白的静态文本条的长度
+            </summary>
+            <param name="barStaticItem">静态文本条</param>
+            <param name="length">长度</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.ButtonStyleHelper">
+            <summary>
+            Button样式辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ButtonStyleHelper.StyleButton(DevExpress.XtraEditors.SimpleButton,System.Drawing.Image,System.Nullable{System.Int32},System.String,System.Boolean,System.Nullable{System.Int32})">
+            <summary>
+            设置Button样式
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.GridDragHelper">
+            <summary>
+            表格拖动Helper
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridDragHelper.Register(DevExpress.XtraGrid.GridControl)">
+            <summary>
+            注册对指定GridControl的拖动事件
+            </summary>
+            <param name="gridControl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridDragHelper.UnRegister">
+            <summary>
+            取消对Grid拖动的注册
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.GridControlDoubleClickHelper`1">
+            <summary>
+            GridView鼠标双击辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridControlDoubleClickHelper`1.GetAction(System.String)">
+            <summary>
+            获取Action
+            </summary>
+            <param name="key">GridView的Name作为存储键</param>
+            <returns>Action实例</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridControlDoubleClickHelper`1.BindDoubleClick(DevExpress.XtraGrid.Views.Grid.GridView,System.Action{`0})">
+            <summary>
+            绑定Grid双击事件
+            </summary>
+            <param name="view">GridView</param>
+            <param name="action">操作</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridControlDoubleClickHelper`1.UnbindDoubleClick(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            解绑行双击
+            </summary>
+            <param name="view">GridView控件</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.SpinEditHelper">
+            <summary>
+            SpinEdit控件辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.SpinEditHelper.SetSpinEditStyle(DevExpress.XtraEditors.SpinEdit,System.Boolean,System.Decimal,System.Decimal)">
+            <summary>
+            设置SpinEdit样式
+            </summary>
+            <param name="spin">spin控件</param>
+            <param name="isFloat"></param>
+            <param name="minValue">最小值</param>
+            <param name="maxValue">最大值</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.SpinEditHelper.SetSpinEditStyle(DevExpress.XtraEditors.SpinEdit,System.Int32,System.Decimal,System.Decimal)">
+            <summary>
+            设置SpinEdit样式
+            </summary>
+            <param name="spin">spin控件</param>
+            <param name="decimalDigits">小数位数</param>
+            <param name="minValue">最小值</param>
+            <param name="maxValue">最大值</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.GridViewPopupHelper`1">
+            <summary>
+            TreeList右键菜单辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridViewPopupHelper`1.BindPopupMenu(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraBars.PopupMenu,System.Predicate{`0})">
+            <summary>
+            绑定弹出右键菜单到树，此方法只支持一个树上注册一个PopupMenu
+            </summary>
+            <param name="view"></param>
+            <param name="popup"></param>
+            <param name="showPredicate">谓词委托，返回true显示右键，false不显示</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridViewPopupHelper`1.UnbindPopupMenu(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraBars.PopupMenu)">
+            <summary>
+            解绑右键弹出菜单
+            </summary>
+            <param name="view">GridView控件</param>
+            <param name="popup">右键弹出菜单</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.ComboBoxHelper">
+            <summary>
+            下拉控件辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.BindEnumToCombo``1(DevExpress.XtraEditors.ComboBoxEdit,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到下拉框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.BindEnumToCombo(DevExpress.XtraEditors.ComboBoxEdit,System.Type,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到下拉框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="enumType">枚举类型</param>
+            <param name="header">请选择等文字</param>
+            <param name="exceptValue">不绑定项</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.BindEnumToCombo(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.Type,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到下拉框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="enumType">枚举类型</param>
+            <param name="header">请选择等文字</param>
+            <param name="exceptValue">不绑定项</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.BindListToCombo``1(DevExpress.XtraEditors.ComboBoxEdit,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.String)">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="header">请选择等文字</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.BindListToCombo``1(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.Func{``0,System.String},System.String)">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="idFunc">取得标识的方法</param>
+            <param name="header">请选择等文字</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.SetSelectEnum``1(DevExpress.XtraEditors.ComboBoxEdit,``0)">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.SetSelectEnum(DevExpress.XtraEditors.ComboBoxEdit,System.Int32)">
+            <summary>
+            设置选中项
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.SetSelectData``1(DevExpress.XtraEditors.ComboBoxEdit,``0)">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.SetSelectKey(DevExpress.XtraEditors.ComboBoxEdit,System.String)">
+            <summary>
+            设置选中项
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="key">数据键</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.GetSelectEnum``1(DevExpress.XtraEditors.ComboBoxEdit)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.ComboBoxHelper.GetSelectData``1(DevExpress.XtraEditors.ComboBoxEdit)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.DeletedStyleHelper">
+            <summary>
+            文字删除样式的帮助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.DeletedStyleHelper.RegisterGrid``1(DevExpress.XtraGrid.Views.Grid.GridView,System.Predicate{``0},System.String)">
+            <summary>
+            向Grid注册删除样式的显示
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="gridView">要显示删除样式的表格</param>
+            <param name="funcIsDeleted">范围数据是否被删除的委托</param>
+            <param name="fieldName">要显示删除样式的列字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.DeletedStyleHelper.RegisterGrid``1(DevExpress.XtraGrid.Views.Grid.GridView,System.Predicate{``0},DevExpress.XtraGrid.Columns.GridColumn)">
+            <summary>
+            向Grid注册删除样式的显示
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="gridView">要显示删除样式的表格</param>
+            <param name="funcIsDeleted">范围数据是否被删除的委托</param>
+            <param name="column">要显示删除样式的列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.DeletedStyleHelper.RegisterTreeList``1(DevExpress.XtraTreeList.TreeList,System.Predicate{``0},System.String)">
+            <summary>
+            向TreeList注册删除样式的显示
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="treeList">要显示删除样式的TreeList</param>
+            <param name="funcIsDeleted">范围数据是否被删除的委托</param>
+            <param name="fieldName">要显示删除样式的列字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.DeletedStyleHelper.RegisterTreeList``1(DevExpress.XtraTreeList.TreeList,System.Predicate{``0},DevExpress.XtraTreeList.Columns.TreeListColumn)">
+            <summary>
+            向TreeList注册删除样式的显示
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="treeList">要显示删除样式的TreeList</param>
+            <param name="funcIsDeleted">范围数据是否被删除的委托</param>
+            <param name="column">要显示删除样式的列</param>
+            <returns></returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.GridDeletedStyleHelper`1">
+            <summary>
+            设置Grid单元格文字删除样式的帮助类
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridDeletedStyleHelper`1.#ctor(DevExpress.XtraGrid.Views.Grid.GridView,System.Predicate{`0},System.String)">
+            <summary>
+            设置Grid单元格文字删除样式的帮助类
+            </summary>
+            <param name="gridView"></param>
+            <param name="funcIsDeleted"></param>
+            <param name="fieldName"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridDeletedStyleHelper`1.GetDataSource">
+            <summary>
+            获取数据源
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridDeletedStyleHelper`1.ColumnNeedSet(DevExpress.XtraGrid.Columns.GridColumn)">
+            <summary>
+            列是否需要设置样式
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.TreeDeletedStyleHelper`1">
+            <summary>
+            设置TreeList单元格文字删除样式的帮助类
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeDeletedStyleHelper`1.#ctor(DevExpress.XtraTreeList.TreeList,System.Predicate{`0},System.String)">
+            <summary>
+            设置TreeList单元格文字删除样式的帮助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeDeletedStyleHelper`1.ColumnNeedSet(DevExpress.XtraTreeList.Columns.TreeListColumn)">
+            <summary>
+            列是否需要设置样式
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.IGridSelectRow">
+            <summary>
+            Grid行选中支持
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.IGridSelectRow.IsSelect">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.PInvokeHelper">
+            <summary>
+            平台互操作辅助类
+            </summary>
+            <summary>
+            平台互操作辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.PInvokeHelper.Logoff">
+            <summary>
+            注销
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.PInvokeHelper.Reboot">
+            <summary>
+            重启
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.PInvokeHelper.Shutdown">
+            <summary>
+            关机
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.PInvokeHelper.GetKeyState(System.Int32)">
+            <summary>
+            获取键状态
+            </summary>
+            <param name="keyCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.PInvokeHelper.keybd_event(System.Byte,System.Byte,System.UInt32,System.UIntPtr)">
+            <summary>
+            改变键状态
+            </summary>
+            <param name="bVk"></param>
+            <param name="bScan"></param>
+            <param name="dwFlags"></param>
+            <param name="dwExtraInfo"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.PInvokeHelper.ChangeNumLock">
+            <summary>
+            设置NUM Lock
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.PInvokeHelper.ChangeScrollLock">
+            <summary>
+            设置Scroll Lock
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.PInvokeHelper.ChangeCapsLock">
+            <summary>
+            设置Caps Lock
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.PInvokeHelper.IsCapsLock">
+            <summary>
+            是否CapsLock开启
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.PInvokeHelper.IsNumLock">
+            <summary>
+            是否NumLock开启
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.PInvokeHelper.IsScrollLock">
+            <summary>
+            是否ScrollLock开启
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.RepositoryComboBoxHelper">
+            <summary>
+            RepositoryComboBox辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.RepositoryComboBoxHelper.BindEnumToRepositoryCombo``1(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到下拉框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.RepositoryComboBoxHelper.BindListToCombo``1(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.String)">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="header">请选择等文字</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.TextEditBlockSelectHelper`1">
+            <summary>
+            文本框块选择帮助器
+            </summary>
+            <typeparam name="TEntity">保存的强类型实体类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.#ctor(DevExpress.XtraEditors.TextEdit)">
+            <summary>
+            构造一个文本框块选择帮助器，以';'作为分隔符
+            </summary>
+            <param name="textEdit">文本框</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.#ctor(DevExpress.XtraEditors.TextEdit,System.Char)">
+            <summary>
+            构造一个文本框块选择帮助器
+            </summary>
+            <param name="textEdit">文本框</param>
+            <param name="splitChar">块分隔字符</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.#ctor(DevExpress.XtraEditors.TextEdit,System.Char,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            构造一个文本框块选择帮助器
+            </summary>
+            <param name="textEdit">文本框</param>
+            <param name="splitChar">块分隔字符</param>
+            <param name="equalityComparer">比较器</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.AddBlock(`0)">
+            <summary>
+            添加一个块，以entity.ToString() 作为显示字符串
+            </summary>
+            <param name="entity">块包含的实体</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.AddBlock(System.String,`0)">
+            <summary>
+            添加一个块
+            </summary>
+            <param name="displayString">显示字符串</param>
+            <param name="entity">块包含的实体</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.ResetText">
+            <summary>
+            重设文本
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.GetBlocks">
+            <summary>
+            获取所有已经添加的块
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.SelectBlock">
+            <summary>
+            选取块
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.CalcSelectionPosition">
+            <summary>
+            计算选区位置
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.GetStartIndex(System.String,System.Int32)">
+            <summary>
+            在文本中获取当前段的开始位置
+            </summary>
+            <param name="text">文本</param>
+            <param name="index">当前位置</param>
+            <returns>当前段的开始位置</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.GetEndIndex(System.String,System.Int32)">
+            <summary>
+            在文本中获取当前段的结束位置
+            </summary>
+            <param name="text">文本</param>
+            <param name="index">当前位置</param>
+            <returns>当前段的结束位置</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.RemoveCurrBlock">
+            <summary>
+            删除当前块
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TextEditBlockSelectHelper`1.GetCurrBlockIndex">
+            <summary>
+            获取当前块序号
+            </summary>
+            <returns>当前块序号</returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.TreeListHelper">
+            <summary>
+            XtraTree辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.BindTree``1(DevExpress.XtraTreeList.TreeList,System.Collections.Generic.List{``0},``0,System.Int32)">
+            <summary>
+            绑定树
+            </summary>
+            <typeparam name="T">数据列表</typeparam>
+            <param name="tree">树控件</param>
+            <param name="datas">数据</param>
+            <param name="selectData">选中数据</param>
+            <param name="expandLevel">展开层级，0折叠，1展开全部，2展开到第二级，3展开到第三级…</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.AppendNodes``1(DevExpress.XtraTreeList.TreeList,System.Collections.Generic.List{``0},System.Int32,DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            添加节点
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.SelectNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            选中节点数据
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">选中数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.SelectNode(DevExpress.XtraTreeList.TreeList,System.String)">
+            <summary>
+            选中节点ID
+            </summary>
+            <param name="tree">树控件</param>
+            <param name="nodeId">选中数据ID</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.FindNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            选中节点数据
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">选中数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.FindNode(DevExpress.XtraTreeList.TreeList,System.String)">
+            <summary>
+            选中节点ID
+            </summary>
+            <param name="tree">树控件</param>
+            <param name="nodeId">选中数据ID</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.ExpandTree``1(DevExpress.XtraTreeList.TreeList,System.Int32)">
+            <summary>
+            展开树
+            </summary>
+            <typeparam name="T">数据列表</typeparam>
+            <param name="tree">树控件</param>
+            <param name="expandLevel">展开层级，0折叠，1展开全部，2展开到第二级，3展开到第三级…</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.ExpandTreeNest(DevExpress.XtraTreeList.Nodes.TreeListNodes,System.Int32)">
+            <summary>
+            遍历递归展开
+            </summary>
+            <param name="nodes">节点集合</param>
+            <param name="expandLevel">展开层级</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.AppendNode``1(DevExpress.XtraTreeList.TreeList,``0,System.String,System.Boolean)">
+            <summary>
+            添加节点数据
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">数据</param>
+            <param name="afterWho">在哪个节点后</param>
+            <param name="select">是否选中添加数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.InsertNode``1(DevExpress.XtraTreeList.TreeList,``0,System.String,System.Boolean)">
+            <summary>
+            插入节点数据
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">数据</param>
+            <param name="beforWho">在哪个节点前</param>
+            <param name="select">是否选中添加数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.UpdateNode``1(DevExpress.XtraTreeList.TreeList,``0,System.Boolean)">
+            <summary>
+            更新节点
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">数据</param>
+            <param name="select">是否选中修改节点</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.UpdateNodeList``1(DevExpress.XtraTreeList.TreeList,System.Collections.Generic.List{``0})">
+            <summary>
+            批量更新节点列表
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="dataList">数据列表</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.RemoveNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            移除节点
+            </summary>
+            <param name="tree">树控件</param>
+            <param name="nodeData">节点数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.MoveUpNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            上移节点
+            </summary>
+            <param name="tree">Tree控件</param>
+            <param name="nodeData">上移节点ID</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.MoveNodeDataUp``1(DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            向下移动指定节点的数据
+            </summary>
+            <param name="findNode"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.MoveTop``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            移动节点到顶部
+            </summary>
+            <param name="tree">Tree控件</param>
+            <param name="nodeData">节点数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.MoveNodeDataTop``1(DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            向下移动指定节点的数据
+            </summary>
+            <param name="findNode"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.MoveBottom``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            移动节点到底部
+            </summary>
+            <param name="tree">Tree控件</param>
+            <param name="nodeData">上移节点ID</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.MoveNodeDataBottom``1(DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            移动指定节点的数据到底部
+            </summary>
+            <param name="findNode"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.MoveDownNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            下移节点
+            </summary>
+            <param name="tree">TreeList控件</param>
+            <param name="nodeData">节点数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.MoveNodeDataDown``1(DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            向下移动指定节点的数据
+            </summary>
+            <param name="findNode"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.FixTreeListColumnWidth(DevExpress.XtraTreeList.Columns.TreeListColumn,System.Int32)">
+            <summary>
+            固定列宽
+            </summary>
+            <param name="column">列</param>
+            <param name="width">宽度</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.RegisteTreeCellHint``1(DevExpress.XtraTreeList.TreeList,System.Func{DevExpress.XtraTreeList.TreeListHitInfo,System.Boolean},System.Func{``0,System.String},System.Func{DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.XtraTreeList.Columns.TreeListColumn,System.String})">
+            <summary>
+            向TreeList注册单元格中的提示信息
+               用户可根据节点，列来指定提示内容
+            </summary>
+            <typeparam name="TEntity">treeList上绑定的实体的类型</typeparam>
+            <param name="treeList">要注册的TreeList</param>
+            <param name="showTipsCondition">显示提示信息的条件</param>
+            <param name="getCellHintText">获取显示文本的委托</param>
+            <param name="getCellHintTitle">获取显示标题的委托，如果为空则显示列标题</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListHelper.RegisteTreeCellHint(DevExpress.XtraTreeList.TreeList,System.Func{DevExpress.XtraTreeList.TreeListHitInfo,System.Boolean},System.Func{DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.XtraTreeList.Columns.TreeListColumn,System.String},System.Func{DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.XtraTreeList.Columns.TreeListColumn,System.String})">
+            <summary>
+            向TreeList注册单元格中的提示信息
+               用户可根据节点，列来指定提示内容
+            </summary>
+            <param name="treeList">要注册的TreeList</param>
+            <param name="showTipsCondition">显示提示信息的条件</param>
+            <param name="getCellHintText">获取显示文本的委托</param>
+            <param name="getCellHintTitle">获取显示标题的委托，如果为空则显示列标题</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.GridServerMode">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridServerMode.RegisterGridView(DevExpress.XtraGrid.Views.Grid.GridView,Smart.Win.Helpers.GridServerModeParameter)">
+            <summary>
+            注册服务端分页GridView
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.SortColumnChangedEventHandler">
+            <summary>
+            排序列改变事件
+            </summary>
+            <param name="column">当前排序列</param>
+            <param name="order">排序顺序</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.GridServerModeParameter">
+            <summary>
+            XtraGrid服务端模式参数
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridServerModeParameter.#ctor(System.Collections.Generic.List{DevExpress.XtraGrid.Columns.GridColumn},System.Int32,System.Int32,System.Int32,DevExpress.XtraGrid.Columns.GridColumn,DevExpress.Data.ColumnSortOrder,Smart.Win.Helpers.SortColumnChangedEventHandler)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="allowSortColumns">允许排序列</param>
+            <param name="canSortImage">可排序列图片</param>
+            <param name="asscendImage">升序图片</param>
+            <param name="descendImage">降序图片</param>
+            <param name="sortColumn">默认排序列</param>
+            <param name="sortOrder">默认排序顺序</param>
+            <param name="sortColumnChanged">排序列改变委托方法</param>
+        </member>
+        <member name="P:Smart.Win.Helpers.GridServerModeParameter.AllowSortColumns">
+            <summary>
+            允许排序列
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.GridServerModeParameter.CanSortImage">
+            <summary>
+            允许排序图片
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.GridServerModeParameter.AsscendImage">
+            <summary>
+            升序图片
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.GridServerModeParameter.DescendImage">
+            <summary>
+            降序图片
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.GridServerModeParameter.SortColumn">
+            <summary>
+            排序列
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.GridServerModeParameter.SortOrder">
+            <summary>
+            排序顺序
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.GridServerModeParameter.SortColumnChanged">
+            <summary>
+            排序列改变委托
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.GridServerModeParameter.OnSortColumnChanged">
+            <summary>
+            激发排序列改变事件
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.TreeStyleHelper">
+            <summary>
+            XtraTree样式辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeStyleHelper.SetXtraTreeStyle(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            设置TreeList样式
+            </summary>
+            <param name="tree">TreeList控件</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeStyleHelper.SetXtraTreeStyle(DevExpress.XtraTreeList.TreeList,System.Boolean)">
+            <summary>
+            设置TreeList样式
+            </summary>
+            <param name="tree">TreeList控件</param>
+            <param name="editable"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeStyleHelper.SetXtraTreeStyle(DevExpress.XtraTreeList.TreeList,DevExpress.XtraTreeList.Columns.TreeListColumn[])">
+            <summary>
+            设置TreeList样式
+            </summary>
+            <param name="tree">TreeList控件</param>
+            <param name="allowEditColumn">允许编辑列</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeStyleHelper.SetAsReadOnly(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            设置树为只读树，只允许选择行，不允许选择单元格
+            </summary>
+            <param name="tree">TreeList控件</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.TreeListPopupHelper`1">
+            <summary>
+            TreeList右键菜单辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeListPopupHelper`1.BindPopupMenu(DevExpress.XtraTreeList.TreeList,DevExpress.XtraBars.PopupMenu,System.Predicate{`0})">
+            <summary>
+            绑定弹出右键菜单到树，此方法只支持一个树上注册一个PopupMenu
+            </summary>
+            <param name="tree"></param>
+            <param name="popup"></param>
+            <param name="showPredicate">谓词委托，返回true显示右键，false不显示</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.RadioGroupHelper">
+            <summary>
+            下拉控件辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.BindEnumToRadioGroup``1(DevExpress.XtraEditors.RadioGroup,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到单选组
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.BindEnumToRadioGroup(DevExpress.XtraEditors.RadioGroup,System.Type,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到单选组
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="except">不绑定项</param>
+            <param name="enumType">枚举类型</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.BindEnumList``1(DevExpress.XtraEditors.RadioGroup,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到单选组
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="list">绑定的枚举列表</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.BindEnumList(DevExpress.XtraEditors.RadioGroup,System.Type,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到单选组
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="list">绑定的枚举列表</param>
+            <param name="enumType">枚举类型</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.BindListToRadioGroup``1(DevExpress.XtraEditors.RadioGroup,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.Func{``0,System.Object})">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="valueFunc">取得值方法</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.SetSelectEnum``1(DevExpress.XtraEditors.RadioGroup,``0)">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.SetSelectValue``1(DevExpress.XtraEditors.RadioGroup,``0)">
+            <summary>
+            设置选中项
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="val">数据</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.GetSelectEnum``1(DevExpress.XtraEditors.RadioGroup)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.RadioGroupHelper.GetSelectData``1(DevExpress.XtraEditors.RadioGroup)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.CheckedComboBoxHelper">
+            <summary>
+            下拉复选控件辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.BindListToCombo``1(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Collections.Generic.List{``0},System.Func{``0,System.String})">
+            <summary>
+            绑定对象列表到下拉复选框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.BindEnumToCombo``1(DevExpress.XtraEditors.CheckedComboBoxEdit,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到下拉复选框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.BindEnumToCombo(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Type,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到下拉复选框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="type">枚举类型</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.SetSelectEnum``1(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Collections.Generic.List{``0})">
+            <summary>
+            设置选中的枚举
+            </summary>
+            <typeparam name="T">枚举类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">选中的枚举列表</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.SetSelectData``1(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Collections.Generic.List{``0},System.Func{``0,System.String})">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+            <param name="displayFunc"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.GetSelectData``1(DevExpress.XtraEditors.CheckedComboBoxEdit)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">CheckedComboBoxEdit控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.GetSelectData``1(DevExpress.XtraEditors.CheckedListBoxControl)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">CheckedListBoxControl控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.GetSelectEnum``1(DevExpress.XtraEditors.CheckedComboBoxEdit)">
+            <summary>
+            获取选中枚举项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.GetSelectEnum``1(DevExpress.XtraEditors.CheckedListBoxControl)">
+            <summary>
+            获取选中枚举项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.RegisterItemCheckCallback(DevExpress.XtraEditors.CheckedComboBoxEdit,DevExpress.XtraEditors.Controls.ItemCheckEventHandler)">
+            <summary>
+            注册CheckedComboBoxEdit的ItemChecked事件
+            </summary>
+            <param name="comboBox">CheckedComboBoxEdit</param>
+            <param name="itemCheckCallback">ItemChecked事件回调</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedComboBoxHelper.ConfigListControl(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Action{DevExpress.XtraEditors.CheckedListBoxControl})">
+            <summary>
+            设置CheckedBoxEdit中包含的CheckedListBoxControl
+            </summary>
+            <param name="checkedComboBoxEdit"></param>
+            <param name="configAction"></param>
+        </member>
+        <member name="T:Smart.Win.Helpers.RepositoryImageComboBoxHelper">
+            <summary>
+            RepositoryComboBox辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.RepositoryImageComboBoxHelper.BindListToRepositoryCombo``1(DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.Func{``0,System.String},System.String)">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="header">请选择等文字</param>
+            <param name="idFunc"></param>
+        </member>
+        <member name="T:Smart.Win.Helpers.CheckedListBoxHelper">
+            <summary>
+            复选控件列表辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.BindList``1(DevExpress.XtraEditors.CheckedListBoxControl,System.Collections.Generic.List{``0},System.Func{``0,System.String})">
+            <summary>
+            绑定对象列表到复选列表控件
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.BindEnum``1(DevExpress.XtraEditors.CheckedListBoxControl,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到复选列表控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.BindEnum(DevExpress.XtraEditors.CheckedListBoxControl,System.Type,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到复选列表控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <param name="enumType">枚举类型</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.BindEnumList``1(DevExpress.XtraEditors.CheckedListBoxControl,System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            绑定枚举到复选列表控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="list">绑定的枚举列表</param>
+            <param name="header">请选择等文字</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.BindEnumList(DevExpress.XtraEditors.CheckedListBoxControl,System.Type,System.Collections.Generic.List{System.Int32},System.String)">
+            <summary>
+            绑定枚举到复选列表控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="list">绑定的枚举列表</param>
+            <param name="header">请选择等文字</param>
+            <param name="enumType">枚举类型</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.SetSelectEnum``1(DevExpress.XtraEditors.CheckedListBoxControl,System.Collections.Generic.List{``0})">
+            <summary>
+            设置选中的枚举
+            </summary>
+            <typeparam name="T">枚举类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">选中的枚举列表</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.SetSelectData``1(DevExpress.XtraEditors.CheckedListBoxControl,System.Collections.Generic.List{``0},System.Func{``0,System.String})">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+            <param name="displayFunc"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.GetSelectData``1(DevExpress.XtraEditors.CheckedListBoxControl)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">CheckedListBoxControl控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.CheckedListBoxHelper.GetSelectEnum``1(DevExpress.XtraEditors.CheckedListBoxControl)">
+            <summary>
+            获取选中枚举项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.TreeFilterHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeFilterHelper.#ctor(DevExpress.XtraTreeList.TreeList,DevExpress.XtraEditors.TextEdit,System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="tree">要实现筛选功能的TreeList控件</param>
+            <param name="edit"></param>
+            <param name="immediate"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeFilterHelper.FilterText(System.String)">
+            <summary>
+            筛选文字
+            </summary>
+            <param name="text">要筛选的文字</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.TreeFilterHelper.ClearFilter">
+            <summary>
+            清除筛选
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.ValidateHelper">
+            <summary>
+            验证辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ValidateHelper.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ValidateHelper.#ctor(DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider)">
+            <summary>
+            验证辅助类
+            </summary>
+            <param name="errorProvider">错误提供控件</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ValidateHelper.Register(DevExpress.XtraEditors.BaseEdit,System.Object,System.Func{System.Collections.Generic.List{Smart.Win.Validate.ValidateResult}},System.Boolean)">
+            <summary>
+            注册验证控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="ctrValue">控件默认值</param>
+            <param name="valMethod">验证方法</param>
+            <param name="immediate"></param>
+        </member>
+        <member name="P:Smart.Win.Helpers.ValidateHelper.ValidateEnable">
+            <summary>
+            验证是否可用
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ValidateHelper.Validate(System.Boolean)">
+            <summary>
+            验证所有注册过的控件
+            </summary>
+            <returns>通过返回true，否则false</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.ValidateHelper.Validate(DevExpress.XtraEditors.BaseEdit)">
+            <summary>
+            验证注册过的特定控件
+            </summary>
+            <param name="ctr">要验证的控件</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ValidateHelper.RemoveEditorError(DevExpress.XtraEditors.BaseEdit)">
+            <summary>
+            移除控件错误提示
+            </summary>
+            <param name="ctr"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ValidateHelper.ShowError(DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider,System.Windows.Forms.Control,System.String)">
+            <summary>
+            显示错误信息
+            </summary>
+            <param name="errorProvider">errorProvider</param>
+            <param name="control">控件</param>
+            <param name="message">提示信息</param>
+        </member>
+        <member name="T:Smart.Win.Helpers.IErrorProvider">
+            <summary>
+            错误提供者接口
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Helpers.IErrorProvider.ErrorProvider">
+            <summary>
+            错误提供者
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Helpers.XtraGridHelper">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.XtraGridHelper.PreHandleFiterText(System.String)">
+            <summary>
+            预处理Filter字符串，这里主要是因为Grid控件本身的Bug导致的
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.XtraGridHelper.GetRepositoryButton(System.String,System.String,System.String,System.Drawing.Image)">
+            <summary>
+            获取XtraGrid按钮
+            </summary>
+            <param name="caption">文字</param>
+            <param name="tooltip">提示</param>
+            <param name="ctrName">控件名</param>
+            <param name="icon">图标</param>
+            <returns><see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit"/>控件</returns>
+        </member>
+        <member name="M:Smart.Win.Helpers.XtraGridHelper.GetRepositoryButton(System.String,System.String,System.String,System.Drawing.Image,System.Boolean)">
+            <summary>
+            获取XtraGrid按钮
+            </summary>
+            <param name="caption">标题</param>
+            <param name="tooltip">提示</param>
+            <param name="ctrName">控件名</param>
+            <param name="icon">控件图标</param>
+            <param name="enable">控件是否可用</param>
+            <returns><see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit"/>控件</returns>
+        </member>
+        <member name="T:Smart.Win.Helpers.ControlStyleHelper">
+            <summary>
+            控件样式设置帮助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetPopupStyle(DevExpress.XtraEditors.XtraForm)">
+            <summary>
+            弹出页面样式
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetPopupStyle(DevExpress.XtraEditors.XtraForm,System.Drawing.Icon,System.Boolean)">
+            <summary>
+            弹出页面样式
+            </summary>
+            <param name="form">form</param>
+            <param name="resize">是否允许重新设置Size</param>
+            <param name="icon"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetDateEditStyle(DevExpress.XtraEditors.DateEdit,DevExpress.XtraEditors.Controls.TextEditStyles)">
+            <summary>
+            设置日期选择控件样式
+            </summary>
+            <param name="ctr">日期选择控件</param>
+            <param name="style"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetSpinEditStyle(DevExpress.XtraEditors.SpinEdit,DevExpress.Utils.HorzAlignment,System.Boolean,DevExpress.XtraEditors.Controls.TextEditStyles)">
+            <summary>
+            设置Spin控件样式
+            </summary>
+            <param name="ctr">Spin控件</param>
+            <param name="align">对齐HorzAlignment</param>
+            <param name="isFloat">是否Float</param>
+            <param name="style">TextEditStyle</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetLabelTextCenter(DevExpress.XtraEditors.LabelControl)">
+            <summary>
+            设置Label文字居中
+            </summary>
+            <param name="lbl"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetNullText(DevExpress.XtraEditors.BaseEdit,System.String,System.String)">
+            <summary>
+            设置控件NullText
+            </summary>
+            <param name="editor">控件</param>
+            <param name="nullText">Null文字</param>
+            <param name="initText">初始文字</param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetLoadingCircle(Smart.Win.Controls.LoadingCircle)">
+            <summary>
+            
+            </summary>
+            <param name="loading"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetNavControl(DevExpress.XtraNavBar.NavBarControl)">
+            <summary>
+            
+            </summary>
+            <param name="nav"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetMainMenu(DevExpress.XtraBars.Bar)">
+            <summary>
+            
+            </summary>
+            <param name="bar"></param>
+        </member>
+        <member name="M:Smart.Win.Helpers.ControlStyleHelper.SetMidManager(DevExpress.XtraTabbedMdi.XtraTabbedMdiManager)">
+            <summary>
+            
+            </summary>
+            <param name="midManager"></param>
+        </member>
+        <member name="T:Smart.Win.Helpers.UserControlHelper">
+            <summary>
+            用户控件辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Helpers.UserControlHelper.ShowDialog(System.Windows.Forms.UserControl,System.String,System.Windows.Forms.Form)">
+            <summary>
+            用户控件显示为对话框
+            </summary>
+            <param name="owner">父窗体</param>
+            <param name="title">窗体标题</param>
+            <param name="uc">用户控件</param>
+            <returns>对话框结果</returns>
+        </member>
+        <member name="T:Smart.Win.Supports.GridSupport.GridSupport`1">
+            <summary>
+            Grid表格支持
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+        </member>
+        <member name="P:Smart.Win.Supports.GridSupport.GridSupport`1.GridRowId">
+            <summary>
+            表格行 唯一标识
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.GridSupport.GridSupport`1.GridRowNo">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.GridSupport.GridSupport`1.GridDataNo">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Supports.GridSupport.GridSupportExtends">
+            <summary>
+            Grid表格支持
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.GridSupport.GridSupportExtends.InitRowNo``1(System.Collections.Generic.List{``0})">
+            <summary>
+            初始化行号
+            </summary>
+            <param name="dataList">数据列表</param>
+        </member>
+        <member name="M:Smart.Win.Supports.GridSupport.GridSupportExtends.InitDataNo``1(System.Collections.Generic.List{``0},System.Int32,System.Int32)">
+            <summary>
+            初始化序号
+            </summary>
+            <param name="dataList">数据列表</param>
+            <param name="pageIndex">当前页</param>
+            <param name="pageSize">页大小</param>
+        </member>
+        <member name="T:Smart.Win.Supports.GridSupport.IGridSupport">
+            <summary>
+            行号/序号
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.GridSupport.IGridSupport.GridRowId">
+            <summary>
+            行ID
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.GridSupport.IGridSupport.GridRowNo">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.GridSupport.IGridSupport.GridDataNo">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Supports.ICheckable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.ICheckable.IsChecked">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Supports.ITimestamp">
+            <summary>
+            时间戳支持
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.ITimestamp.Timestamp">
+            <summary>
+            时间戳
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Supports.KeyEqualityComparer`1">
+            <summary>
+            IKey接口对象相等比较器
+            </summary>
+            <typeparam name="T">实现IKey的类型</typeparam>
+        </member>
+        <member name="M:Smart.Win.Supports.KeyEqualityComparer`1.Equals(`0,`0)">
+            <summary>
+            相等比较
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.KeyEqualityComparer`1.GetHashCode(`0)">
+            <summary>
+            取得对象HashCode
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Supports.KeyEqualityComparer">
+            <summary>
+            Key相等比较器
+            </summary>
+        </member>
+        <member name="F:Smart.Win.Supports.KeyEqualityComparer.Default">
+            <summary>
+            默认比较器实例
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.KeyEqualityComparer.Equals(Smart.Net45.Interface.IKey,Smart.Net45.Interface.IKey)">
+            <summary>
+            确定指定的对象是否相等
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Supports.KeyEqualityComparer.GetHashCode(Smart.Net45.Interface.IKey)">
+            <summary>
+            返回指定对象的哈希代码
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Smart.Win.Supports.TreeSupport.ITreeSupport">
+            <summary>
+            树状支持
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.ITreeSupport.NodeParentId">
+            <summary>
+            节点父ID
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.ITreeSupport.NodeId">
+            <summary>
+            节点ID
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.ITreeSupport.NodeLevel">
+            <summary>
+            节点层级
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.ITreeSupport.SetNodeLevel(System.Int32)">
+            <summary>
+            设置节点层级
+            </summary>
+            <param name="nodeLevel">节点层级</param>
+        </member>
+        <member name="T:Smart.Win.Supports.TreeSupport.ITreeSupport`1">
+            <summary>
+            树状支持
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.ITreeSupport`1.Children">
+            <summary>
+            子节点
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.ITreeSupport`1.Parent">
+            <summary>
+            父节点
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.ITreeSupport`1.SetParent(`0)">
+            <summary>
+            设置父节点
+            </summary>
+            <param name="parent">父节点</param>
+        </member>
+        <member name="T:Smart.Win.Supports.TreeSupport.TreeSupport`1">
+            <summary>
+            树支持
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.TreeSupport`1.Children">
+            <summary>
+            子节点列表
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.TreeSupport`1.Parent">
+            <summary>
+            父节点
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.TreeSupport`1.SetParent(`0)">
+            <summary>
+            设置父节点
+            </summary>
+            <param name="parent">父节点</param>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.TreeSupport`1.NodeParentId">
+            <summary>
+            父节点Id
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.TreeSupport`1.NodeId">
+            <summary>
+            节点Id
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.TreeSupport`1.HaveChild">
+            <summary>
+            是否有孩子节点
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.TreeSupport`1.HaveParent">
+            <summary>
+            是否有父亲节点
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.TreeSupport`1.ChildNum">
+            <summary>
+            子节点数量
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Supports.TreeSupport.TreeSupport`1.NodeLevel">
+            <summary>
+            节点层级
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.TreeSupport`1.SetNodeLevel(System.Int32)">
+            <summary>
+            设置节点层级
+            </summary>
+            <param name="nodeLevel">节点层级</param>
+        </member>
+        <member name="T:Smart.Win.Supports.TreeSupport.TreeSupportExtends">
+            <summary>
+            树状支持辅类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.TreeSupportExtends.GetRoots``1(System.Collections.Generic.List{``0})">
+            <summary>
+            取得根节点
+            </summary>
+            <param name="dataList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.TreeSupportExtends.GetRoots``1(System.Collections.Generic.List{``0},System.Predicate{``0})">
+            <summary>
+            取得根节点
+            </summary>
+            <param name="dataList">数据列表</param>
+            <param name="func">是否返回数据，返回true，可在委托方法中预处理数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.TreeSupportExtends.InitTree``1(System.Collections.Generic.List{``0})">
+            <summary>
+            初始化树
+            </summary>
+            <param name="dataList">数据列表</param>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.TreeSupportExtends.InitTreeForSerilize``1(System.Collections.Generic.List{``0})">
+            <summary>
+            提供无循环引用的可序列化树支持
+            </summary>
+            <param name="dataList">数据列表</param>
+        </member>
+        <member name="T:Smart.Win.Supports.TreeSupport.TreeSupportHelper">
+            <summary>
+            树状支持辅类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Supports.TreeSupport.TreeSupportHelper.InitTree``1(System.Collections.Generic.List{``0})">
+            <summary>
+            初始化树
+            </summary>
+            <param name="dataList">数据列表</param>
+        </member>
+        <member name="T:Smart.Win.UtilityHelper">
+            <summary>
+            WinForm通用辅助类
+            </summary>
+            <summary>
+            WinForm通用辅助类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowToast(Smart.Win.Enums.ToastKinds,Smart.Win.Entities.ToastOptions,System.String,System.Windows.Forms.Form)">
+            <summary>
+            提示
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowToast(Smart.Win.Entities.ToastOptions,System.Windows.Forms.Control,System.Windows.Forms.Form)">
+            <summary>
+            显示提示（内容为用户控件）
+            </summary>
+            <param name="options">选项</param>
+            <param name="ctr">控件</param>
+            <param name="frm">窗体</param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowWait(System.Object,System.String,System.String,System.Object[])">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowWait(System.Action,System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowWait(System.Action,System.Action,System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowWait``1(System.Func{``0},System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowInnerWait(System.Windows.Forms.Control,System.String)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.CloseInnerWait(System.Windows.Forms.Control)">
+            <summary>
+            在指定控件的中部取消等候图标的显示
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowInnerWaitCircle(System.Windows.Forms.Control,System.String,Smart.Win.Controls.LoadingCircle.LoadingCircleStyle)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowInnerWaitCircle(System.Windows.Forms.Control,Smart.Win.Controls.LoadingCircle,System.String)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.CloseInnerWaitCircle(System.Windows.Forms.Control)">
+            <summary>
+            在指定控件的中部取消等候图标的显示
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.CenterControl(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>
+            控件置中
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.AddRedStar(System.Windows.Forms.Control,Smart.Win.Enums.PositionEnum)">
+            <summary>
+            添加必填红星
+            </summary>
+            <param name="ctr">要添加红星的控件</param>
+            <param name="position">图标位置</param>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowInfoMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            提示
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowWarningMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowErrorMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowConfirmMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            确认
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowSuccessMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowInfoMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            提示
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowWarningMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowErrorMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowConfirmMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            确认
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowSuccessMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.ShowDialog(System.Windows.Forms.Control,System.String,System.Windows.Forms.Form,System.Boolean)">
+            <summary>
+            用户控件显示为对话框
+            </summary>
+            <param name="owner">父窗体</param>
+            <param name="title">窗体标题</param>
+            <param name="uc">用户控件</param>
+            <param name="allowEsc">是否允许ESC键关闭窗体</param>
+            <returns>对话框结果</returns>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.InvokeExecute(System.Windows.Forms.Control,System.Action)">
+            <summary>
+            Invoke执行
+            </summary>
+            <param name="ctr">调用Invoke方法的控件</param>
+            <param name="action">执行方法</param>
+        </member>
+        <member name="M:Smart.Win.UtilityHelper.GetControlName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">
+            <summary>
+            得到控件名称（只使用于窗体布局）
+            </summary>
+            <returns>控件名称</returns>
+        </member>
+        <member name="T:Smart.Win.Validate.ValidateResult">
+            <summary>
+            验证结果
+            </summary>
+        </member>
+        <member name="M:Smart.Win.Validate.ValidateResult.#ctor(System.String,System.String,System.Boolean,System.Int64)">
+            <summary>
+            完全构造函数
+            </summary>
+            <param name="errorMessage">验证错误消息</param>
+            <param name="fieldName">验证字段</param>
+            <param name="result">验证结果</param>
+            <param name="errorCode">失败错误码</param>
+        </member>
+        <member name="P:Smart.Win.Validate.ValidateResult.ErrorMessage">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Validate.ValidateResult.FieldName">
+            <summary>
+            验证字段
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Validate.ValidateResult.Pass">
+            <summary>
+            是否通过验证
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Validate.ValidateResult.ErrorCode">
+            <summary>
+            验证错误码(暂不使用)
+            </summary>
+        </member>
+        <member name="T:Smart.Win.WinUtilityConsts">
+            <summary>
+            公共类库使用常量
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.TreeListFilterTagKey">
+            <summary>
+            TreeList过滤Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.TreeListBindDatasTagKey">
+            <summary>
+            TreeList绑定数据列表Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.TreeListNodeBindDataTagKey">
+            <summary>
+            TreeListNode绑定数据Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.TreeListPopupMenuHelperTagKey">
+            <summary>
+            TreeList弹出菜单帮助类Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.GridViewPopupMenuHelperTagKey">
+            <summary>
+            GridView弹出菜单绑定辅助类Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.GridViewDoubleClickHelperTagKey">
+            <summary>
+            GridView双击事件绑定辅助类Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.TileViewPopupMenuHelperTagKey">
+            <summary>
+            TileView弹出菜单绑定辅助类Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.ColumnViewPopupMenuHelperTagKey">
+            <summary>
+            ColumnView弹出菜单绑定辅助类Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.FormToastFlyoutPanelTagKey">
+            <summary>
+            窗体消息Toast控件Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.FormToastFlyoutPanelLabelTagKey">
+            <summary>
+            窗体消息Toast控件中Label控件Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.FormToastFlyoutPanelControlTagKey">
+            <summary>
+            窗体Control容器Toast控件Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.ServicesDllNamesKey">
+            <summary>
+            窗体Control容器Toast控件Tag键
+            </summary>
+        </member>
+        <member name="F:Smart.Win.WinUtilityConsts.BeakTooltipBeakPanelOptionsTagKey">
+            <summary>
+            BeakTooltip使用BeakPanelOptions控件Tag键
+            </summary>
+        </member>
+        <member name="T:Smart.Win.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.AddNew">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.CollapseAll16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.CommandKey">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.Delete">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.Executing">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.ExpandAll16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.LightBlue">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.LightGreen">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.LightRed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.LightYellow">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.Overlay">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.Success">
+            <summary>
+              查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:Smart.Win.Properties.Resources.Wait">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="T:Smart.Win.AttachedFileUploader">
+            <summary>
+            附件上传类
+            </summary>
+        </member>
+        <member name="M:Smart.Win.AttachedFileUploader.Upload(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="url"></param>
+            <param name="fullName"></param>
+            <param name="attachedFileType"></param>
+            <param name="cookies"></param>
+            <returns></returns>
+            <example>
+            <code>
+            Perform the equivalent of posting a form with a fullName and two files, in HTML:
+            <form action="{url}" method="post" enctype="multipart/form-data">
+                <input type="text" name="fullName" />
+                <input type="file" name="file1" />
+            </form>
+            </code>
+            </example>
+        </member>
+        <member name="M:Smart.Win.AttachedFileUploader.Delete(System.String,System.String)">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="T:SmartSolution.Utilities.Win.Controls.ColumnShowUc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSolution.Utilities.Win.Controls.ColumnShowUc.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSolution.Utilities.Win.Controls.ColumnShowUc.InitUC(DevExpress.XtraGrid.Views.Grid.GridView,System.Collections.Generic.List{System.String},System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="lockColumn"></param>
+            <param name="gridID"></param>
+            <param name="employeeID"></param>
+        </member>
+        <member name="M:SmartSolution.Utilities.Win.Controls.ColumnShowUc.BindEvents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSolution.Utilities.Win.Controls.ColumnShowUc.BindControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSolution.Utilities.Win.Controls.ColumnShowUc.SetViewShow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SmartSolution.Utilities.Win.Controls.ColumnShowUc.AllShowFieldSetting">
+            <summary>
+            Get所有显示字段设置
+            </summary>
+        </member>
+        <member name="T:SmartSolution.Utilities.Win.Controls.ColumnShowUc.ShowColumnItem">
+            <summary>
+            显示列项
+            </summary>
+        </member>
+        <member name="P:SmartSolution.Utilities.Win.Controls.ColumnShowUc.ShowColumnItem.ColumnCaption">
+            <summary>
+            列标题
+            </summary>
+        </member>
+        <member name="P:SmartSolution.Utilities.Win.Controls.ColumnShowUc.ShowColumnItem.ColumnField">
+            <summary>
+            列字段
+            </summary>
+        </member>
+        <member name="P:SmartSolution.Utilities.Win.Controls.ColumnShowUc.ShowColumnItem.ImageIndex">
+            <summary>
+            图片索引
+            </summary>
+        </member>
+        <member name="F:SmartSolution.Utilities.Win.Controls.ColumnShowUc.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SmartSolution.Utilities.Win.Controls.ColumnShowUc.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SmartSolution.Utilities.Win.Controls.ColumnShowUc.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

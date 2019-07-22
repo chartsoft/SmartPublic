@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Smart.Standard.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WebClient\**" />
+    <EmbeddedResource Remove="WebClient\**" />
+    <None Remove="WebClient\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Attribute\GetTableAttribute.cs" />
+    <Compile Remove="Extends\DecimalExtends.cs" />
+    <Compile Remove="Extends\IHttpApiClientExtends.cs" />
+    <Compile Remove="Extends\JsonHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="JWT" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="PinYinConverterCore" Version="1.0.2" />
+    <PackageReference Include="SharpZipLib.NETStandard" Version="1.0.7" />
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+    <PackageReference Include="System.Security.Permissions" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.netcore.app\2.0.0\ref\netcoreapp2.0\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="SET DllPath=$(SolutionDir)..\Assembly\&#xD;&#xA;xcopy &quot;$(TargetPath)&quot; &quot;%DllPath%$(TargetFileName)&quot; /E /C /Y /R /U&#xD;&#xA;xcopy &quot;$(TargetDir)$(TargetName).XML&quot; &quot;%DllPath%$(TargetName).XML&quot; /E /C /Y /R /U" />
+  </Target>
+
+</Project>
