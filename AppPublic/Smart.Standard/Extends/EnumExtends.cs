@@ -75,7 +75,11 @@ namespace Smart.Standard.Extends
         /// <returns></returns>
         public static TEnum AddFlags<TEnum>(this TEnum enumValue, TEnum flags) where TEnum : struct
         {
-                enumValue = (enumValue.CastTo<int>() | flags.CastTo<int>()).CastTo<TEnum>();
+            foreach (var item in flags.ToIntArray())
+            {
+                if ((enumValue.CastTo<int>() & item.CastTo<int>()) != item.CastTo<int>())
+                    enumValue = (enumValue.CastTo<int>() | item.CastTo<int>()).CastTo<TEnum>();
+            }
             return enumValue;
         }
 

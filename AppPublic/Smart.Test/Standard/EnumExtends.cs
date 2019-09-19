@@ -14,8 +14,7 @@ namespace Smart.Test.Standard
         public void AddEnumFlags()
         {
             var state = StatesKinds.Enable | StatesKinds.UnLock;
-
-          
+            Console.WriteLine(state.AddFlags(StatesKinds.Remove | StatesKinds.Expire));
             Console.WriteLine(state.RemoveFlags(StatesKinds.UnLock | StatesKinds.DissEnable));
         }
 
