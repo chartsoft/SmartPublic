@@ -1604,6 +1604,21 @@
             解锁
             </summary>
         </member>
+        <member name="F:Smart.Standard.Enum.StatesKinds.NotAudit">
+            <summary>
+            未审核
+            </summary>
+        </member>
+        <member name="F:Smart.Standard.Enum.StatesKinds.AuditPass">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="F:Smart.Standard.Enum.StatesKinds.AuditRefuse">
+            <summary>
+            审核未通过
+            </summary>
+        </member>
         <member name="T:Smart.Standard.Enum.StateStatic">
             <summary>
             states 类
