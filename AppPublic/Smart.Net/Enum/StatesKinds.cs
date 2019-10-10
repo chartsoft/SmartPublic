@@ -59,6 +59,16 @@ namespace Smart.Net45.Enum
         /// 提现中
         /// </summary>
         [EnumDescription("提现中")]
-        CashOut = 1 << 9
+        CashOut = 1 << 9,
+        /// <summary>
+        /// 成功
+        /// </summary>
+        [EnumDescription("成功")]
+        Success =1<<10,
+        /// <summary>
+        /// 失败
+        /// </summary>
+        [EnumDescription("失败")]
+        Fail =1<<11
     }
 }
