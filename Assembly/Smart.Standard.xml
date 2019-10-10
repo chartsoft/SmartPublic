@@ -1624,6 +1624,16 @@
             提现中
             </summary>
         </member>
+        <member name="F:Smart.Standard.Enum.StatesKinds.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:Smart.Standard.Enum.StatesKinds.Fail">
+            <summary>
+            失败
+            </summary>
+        </member>
         <member name="T:Smart.Standard.Enum.StateStatic">
             <summary>
             states 类

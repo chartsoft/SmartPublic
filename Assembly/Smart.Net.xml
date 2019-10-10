@@ -1572,6 +1572,16 @@
             提现中
             </summary>
         </member>
+        <member name="F:Smart.Net45.Enum.StatesKinds.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:Smart.Net45.Enum.StatesKinds.Fail">
+            <summary>
+            失败
+            </summary>
+        </member>
         <member name="T:Smart.Net45.Enum.StateStatic">
             <summary>
             states 类
