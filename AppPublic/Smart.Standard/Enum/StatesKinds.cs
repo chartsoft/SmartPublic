@@ -54,6 +54,11 @@ namespace Smart.Standard.Enum
         /// 审核未通过
         /// </summary>
         [EnumDescription("审核未通过")]
-        AuditRefuse=1<<8
+        AuditRefuse=1<<8,
+        /// <summary>
+        /// 提现中
+        /// </summary>
+        [EnumDescription("提现中")]
+        CashOut =1<<9
     }
 }

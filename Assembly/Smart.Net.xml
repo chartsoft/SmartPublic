@@ -1552,6 +1552,26 @@
             解锁
             </summary>
         </member>
+        <member name="F:Smart.Net45.Enum.StatesKinds.NotAudit">
+            <summary>
+            未审核
+            </summary>
+        </member>
+        <member name="F:Smart.Net45.Enum.StatesKinds.AuditPass">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="F:Smart.Net45.Enum.StatesKinds.AuditRefuse">
+            <summary>
+            审核未通过
+            </summary>
+        </member>
+        <member name="F:Smart.Net45.Enum.StatesKinds.CashOut">
+            <summary>
+            提现中
+            </summary>
+        </member>
         <member name="T:Smart.Net45.Enum.StateStatic">
             <summary>
             states 类
