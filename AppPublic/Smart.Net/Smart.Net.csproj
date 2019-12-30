@@ -119,6 +119,7 @@
     <Compile Include="Extends\FileHelper.cs" />
     <Compile Include="Extends\IDataReaderExtends.cs" />
     <Compile Include="Extends\ImageExtends.cs" />
+    <Compile Include="Extends\IntExtends.cs" />
     <Compile Include="Extends\ListExtension.cs" />
     <Compile Include="Extends\MethodExtends.cs" />
     <Compile Include="Extends\ObjectExtends.cs" />

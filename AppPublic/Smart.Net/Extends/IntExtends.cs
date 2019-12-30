@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Smart.Standard.Extends
+namespace Smart.Net45.Extends
 {
     /// <summary>
     /// Int扩展类
