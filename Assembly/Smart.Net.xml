@@ -2405,6 +2405,43 @@
              图片转换成字节流 
             </summary>
         </member>
+        <member name="T:Smart.Net45.Extends.IntExtends">
+            <summary>
+            Int扩展类
+            </summary>
+        </member>
+        <member name="M:Smart.Net45.Extends.IntExtends.HasFlag(System.Int32,System.Int32)">
+            <summary>
+            判断是否存在
+            </summary>
+            <param name="states"></param>
+            <param name="flag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Net45.Extends.IntExtends.HasFlag(System.Int32,System.Enum)">
+            <summary>
+            判断是否存在该状态
+            </summary>
+            <param name="states"></param>
+            <param name="flag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Net45.Extends.IntExtends.ToAry(System.Int64,System.Int32)">
+            <summary>
+            10进制转换成多进制
+            </summary>
+            <param name="x"></param>
+            <param name="ary"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Net45.Extends.IntExtends.ToAry(System.Int32,System.Int32)">
+            <summary>
+            10进制转换成多进制
+            </summary>
+            <param name="x"></param>
+            <param name="ary"></param>
+            <returns></returns>
+        </member>
         <member name="T:Smart.Net45.Extends.ListExtensions">
             <summary>
             <see cref="T:System.Collections.Generic.List`1"/> 扩展方法

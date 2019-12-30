@@ -2461,6 +2461,22 @@
             <param name="flag"></param>
             <returns></returns>
         </member>
+        <member name="M:Smart.Standard.Extends.IntExtends.ToAry(System.Int64,System.Int32)">
+            <summary>
+            10进制转换成多进制
+            </summary>
+            <param name="x"></param>
+            <param name="ary"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Standard.Extends.IntExtends.ToAry(System.Int32,System.Int32)">
+            <summary>
+            10进制转换成多进制
+            </summary>
+            <param name="x"></param>
+            <param name="ary"></param>
+            <returns></returns>
+        </member>
         <member name="T:Smart.Standard.Extends.ListExtensions">
             <summary>
             <see cref="T:System.Collections.Generic.List`1"/> 扩展方法
@@ -5117,6 +5133,28 @@
             </summary>
             <param name="sUnformattedXml"></param>
             <returns></returns>
+        </member>
+        <member name="T:Smart.Standard.Helper.SmartPathHelper">
+            <summary>
+            相对路径和绝对路径相互转换
+            </summary>
+        </member>
+        <member name="M:Smart.Standard.Helper.SmartPathHelper.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="relativePath">相对路径</param>
+            <param name="absolutePath">绝对路径</param>
+        </member>
+        <member name="P:Smart.Standard.Helper.SmartPathHelper.RelativePath">
+            <summary>
+            相对路径
+            </summary>
+        </member>
+        <member name="P:Smart.Standard.Helper.SmartPathHelper.AbsolutePath">
+            <summary>
+            绝对路径
+            </summary>
         </member>
         <member name="T:Smart.Standard.Helper.SqlHelper">
             <summary>
