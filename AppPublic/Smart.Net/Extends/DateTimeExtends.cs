@@ -91,7 +91,7 @@ namespace Smart.Net45.Extends
         public static DateTime GetValidSqlServerDateTimeOrNow(this DateTime dateTime)
         {
             return dateTime.IsValidSqlServerDateTime() ? dateTime : DateTime.Now;
-        }       
+        }
         /// <summary>
         /// 转换为Unix时间戳（毫秒）
         /// </summary>
@@ -120,6 +120,16 @@ namespace Smart.Net45.Extends
             return LunarDateTimeHelper.GetChineseDateTime(dateTime);
         }
         /// <summary>
+        /// 获取上周周一
+        /// </summary>
+        /// <param name="dateTime"></param>
+        /// <returns></returns>
+        public static DateTime LastMonday(this DateTime dateTime)
+        {
+            return dateTime.ThisMonday().AddDays(-7);
+        }
+
+        /// <summary>
         /// 获取本周周一
         /// </summary>
         /// <returns></returns>
@@ -127,6 +137,16 @@ namespace Smart.Net45.Extends
         {
             return dateTime.AddDays(1 - dateTime.DayOfWeek.CastTo<int>());
         }
+        /// <summary>
+        /// 获取本周的星期几的日期
+        /// </summary>
+        /// <returns></returns>
+        public static DateTime DayOfWeekTime(this DateTime dateTime, DayOfWeek dayOfWeek)
+        {
+            var dayAdd = dayOfWeek == DayOfWeek.Sunday ? 6 : dayOfWeek.CastTo<int>() - 1;
+            return dateTime.ThisMonday().AddDays(dayAdd);
+        }
+
         /// <summary>
         /// 获取下周周一
         /// </summary>
@@ -136,6 +156,15 @@ namespace Smart.Net45.Extends
         {
             return dateTime.ThisMonday().AddDays(7);
         }
+        /// <summary>
+        /// 获取上月的1号
+        /// </summary>
+        /// <returns></returns>
+        public static DateTime LastMonthStart(this DateTime dateTime)
+        {
+            return dateTime.ThisMonthStart().AddMonths(-1);
+        }
+
         /// <summary>
         /// 获取本月1号
         /// </summary>

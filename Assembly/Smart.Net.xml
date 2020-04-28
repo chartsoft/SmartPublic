@@ -2088,9 +2088,22 @@
             <param name="dateTime"></param>
             <returns></returns>
         </member>
+        <member name="M:Smart.Net45.Extends.DateTimeExtends.LastMonday(System.DateTime)">
+            <summary>
+            获取上周周一
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
         <member name="M:Smart.Net45.Extends.DateTimeExtends.ThisMonday(System.DateTime)">
             <summary>
             获取本周周一
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Net45.Extends.DateTimeExtends.DayOfWeekTime(System.DateTime,System.DayOfWeek)">
+            <summary>
+            获取本周的星期几的日期
             </summary>
             <returns></returns>
         </member>
@@ -2099,6 +2112,12 @@
             获取下周周一
             </summary>
             <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Smart.Net45.Extends.DateTimeExtends.LastMonthStart(System.DateTime)">
+            <summary>
+            获取上月的1号
+            </summary>
             <returns></returns>
         </member>
         <member name="M:Smart.Net45.Extends.DateTimeExtends.ThisMonthStart(System.DateTime)">

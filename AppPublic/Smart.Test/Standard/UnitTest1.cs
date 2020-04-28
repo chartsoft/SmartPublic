@@ -273,6 +273,27 @@ namespace Smart.Test.Standard
             sql = list.Where(item => states.HasFlag(item)).Aggregate(sql, (current, item) => current + $" AND {clounms}|{item.CastTo<int>()}={item.CastTo<int>()}");
             return sql;
         }
+        [TestMethod]
+        public void DbTest()
+        {
+          var t=  typeof(StudentInfo).GetAttribute<DbTableAttribute>();
+          Console.WriteLine(t.PackJson());
+        }
+
+        [TestMethod]
+        public void DateTimeTest()
+        {
+            Console.WriteLine(DateTime.Now.LastMonday().Date.ToDateTimeStringSecond());
+            Console.WriteLine(DateTime.Now.LastMonthStart().Date.ToDateTimeStringSecond());
+            Console.WriteLine(DateTime.Now.DayOfWeekTime(DayOfWeek.Sunday).Date);
+            Console.WriteLine(DateTime.Now.DayOfWeekTime(DayOfWeek.Monday).Date);
+            Console.WriteLine(DateTime.Now.DayOfWeekTime(DayOfWeek.Tuesday).Date);
+            Console.WriteLine(DateTime.Now.DayOfWeekTime(DayOfWeek.Wednesday).Date);
+            Console.WriteLine(DateTime.Now.DayOfWeekTime(DayOfWeek.Thursday).Date);
+            Console.WriteLine(DateTime.Now.DayOfWeekTime(DayOfWeek.Friday).Date);
+            Console.WriteLine(DateTime.Now.DayOfWeekTime(DayOfWeek.Saturday).Date);
+            Console.WriteLine(DateTime.Now.DayOfWeekTime(DayOfWeek.Sunday).Date);
+        }
     }
 
 
@@ -288,6 +309,7 @@ namespace Smart.Test.Standard
 
  
 }
+[DbTable(TableName = "1111")]
 public class StudentInfo
 {
     public int Id { get; set; }
