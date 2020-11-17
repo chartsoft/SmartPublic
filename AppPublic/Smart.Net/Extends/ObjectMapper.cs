@@ -31,12 +31,32 @@ namespace Smart.Net45.Extends
             if (sourceObject == null)
                 return default(TTarget);
 
-            var result = ConvertObject<TSource, TTarget>(sourceObject);
+            var result = ConvertObject<TTarget>(sourceObject);
 
             customeConvertAction?.Invoke(sourceObject, result);
 
             return result;
         }
+        /// <summary>
+        /// 获取指定类型的对象，并从源对象获取同名属性值
+        /// </summary>
+        /// <typeparam name="TTarget"></typeparam>
+        /// <param name="sourceObject"></param>
+        /// <param name="customeConvertAction"></param>
+        /// <returns></returns>
+        public static TTarget Map<TTarget>(this object sourceObject,
+            Action<object, TTarget> customeConvertAction = null)where TTarget : new()
+        {
+            if (sourceObject == null)
+                return default(TTarget);
+
+            var result = ConvertObject<TTarget>(sourceObject);
+
+            customeConvertAction?.Invoke(sourceObject, result);
+
+            return result;
+        }
+
         /// <summary>
         /// 获取指定类型的对象的列表，并从源列表中对象获取同名属性值
         /// </summary>
@@ -49,17 +69,29 @@ namespace Smart.Net45.Extends
         {
             return sourceObjectList.Select(sourceObject => Map(sourceObject, customeConvertAction));
         }
+
+        /// <summary>
+        /// 获取指定类型的对象的列表，并从源列表中对象获取同名属性值
+        /// </summary>
+        
+        /// <typeparam name="TTarget">目标对象类型</typeparam>
+        /// <param name="sourceObjectList">源对象列表</param>
+        /// <param name="customeConvertAction">对实体执行的自定义操作，不应该有对模型的修改代码</param>
+        /// <returns>目标对象列表</returns>
+        public static IEnumerable<TTarget> Map<TTarget>(this IEnumerable<object> sourceObjectList, Action<object, TTarget> customeConvertAction = null) where TTarget : new()
+        {
+            return sourceObjectList.Select(sourceObject => Map(sourceObject, customeConvertAction));
+        }
         /// <summary>
         /// 获取指定类型的对象，并从源对象获取同名属性值
         /// </summary>
-        /// <typeparam name="TSource">源对象类型</typeparam>
         /// <typeparam name="TTarget">目标对象类型</typeparam>
         /// <param name="sourceObject">源对象</param>
         /// <returns>目标对象</returns>
-        private static TTarget ConvertObject<TSource, TTarget>(this object sourceObject)
+        private static TTarget ConvertObject< TTarget>(this object sourceObject)
             where TTarget : new()
         {
-            var sourceType = typeof(TSource);
+            var sourceType = sourceObject.GetType();
             var targetType = typeof(TTarget);
 
             var sourceTypePropertiesDictionary = GetOrCreatePropertiesDictionary(sourceType);

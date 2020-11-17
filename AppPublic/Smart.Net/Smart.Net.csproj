@@ -150,6 +150,8 @@
     <Compile Include="Helper\ArgumentGuard.cs" />
     <Compile Include="Helper\CryptoHelper.cs" />
     <Compile Include="Helper\DateTimeHelper.cs" />
+    <Compile Include="Helper\Encrypt\MD5Helper.cs" />
+    <Compile Include="Helper\Encrypt\RsaHelper.cs" />
     <Compile Include="Helper\HashAlgorithmHelper.cs" />
     <Compile Include="Helper\HttpRequestHelper.cs" />
     <Compile Include="Helper\HttpRequestMessageExtensions.cs" />

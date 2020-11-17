@@ -6,15 +6,15 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using Smart.Net45.Consts;
 using Smart.Net45.Enum;
 using Smart.Net45.Helper;
+using Smart.Net45.Helper.Encrypt;
 using Smart.Net45.ParseProviders;
 
 namespace Smart.Net45.Extends
 {
     /// <summary>
-    /// 字符串扩展方法
+    /// 字符串扩展类
     /// </summary>
     public static class StringExtend
     {
@@ -127,7 +127,7 @@ namespace Smart.Net45.Extends
         /// <exception cref="NotImplementedException">未实现对应的哈希Algorithm</exception>
         public static string ToHash(this string str, HashAlgorithmKinds hashAlgorithm)
         {
-            var retval = string.Empty;
+            var retrieval = string.Empty;
             if (!string.IsNullOrEmpty(str))
             {
                 var data = Encoding.Default.GetBytes(str);
@@ -136,13 +136,11 @@ namespace Smart.Net45.Extends
                     case HashAlgorithmKinds.Md5:
                         {
                             #region md5
-                            MD5 md5 = new MD5CryptoServiceProvider();
-                            md5.TransformFinalBlock(data, 0, data.Length);
-                            foreach (var b in md5.Hash)
-                            {
-                                retval += Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0');
-                            }
-                            md5.Clear();
+                            //MD5 md5 = new MD5CryptoServiceProvider();
+                            //md5.TransformFinalBlock(data, 0, data.Length);
+                            //retval = md5.Hash.Aggregate(retval, (current, b) => current + Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0'));
+                            //md5.Clear();
+                            retrieval= Md5Helper.Encrypt(str);
                             #endregion
                             break;
                         }
@@ -151,10 +149,7 @@ namespace Smart.Net45.Extends
                             #region sha160
                             SHA1 sha1 = new SHA1Managed();
                             sha1.TransformFinalBlock(data, 0, data.Length);
-                            foreach (var b in sha1.Hash)
-                            {
-                                retval += Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0');
-                            }
+                            retrieval = sha1.Hash.Aggregate(retrieval, (current, b) => current + Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0'));
                             sha1.Clear();
                             #endregion
                             break;
@@ -164,10 +159,7 @@ namespace Smart.Net45.Extends
                             #region sha256
                             SHA256 sha2 = new SHA256Managed();
                             sha2.TransformFinalBlock(data, 0, data.Length);
-                            foreach (var b in sha2.Hash)
-                            {
-                                retval += Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0');
-                            }
+                            retrieval = sha2.Hash.Aggregate(retrieval, (current, b) => current + Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0'));
                             sha2.Clear();
                             #endregion
                             break;
@@ -177,10 +169,7 @@ namespace Smart.Net45.Extends
                             #region sha384
                             SHA384 sha3 = new SHA384Managed();
                             sha3.TransformFinalBlock(data, 0, data.Length);
-                            foreach (var b in sha3.Hash)
-                            {
-                                retval += Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0');
-                            }
+                            retrieval = sha3.Hash.Aggregate(retrieval, (current, b) => current + Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0'));
                             sha3.Clear();
                             #endregion
                             break;
@@ -190,20 +179,19 @@ namespace Smart.Net45.Extends
                             #region sha512
                             SHA512 sha5 = new SHA512Managed();
                             sha5.TransformFinalBlock(data, 0, data.Length);
-                            retval = sha5.Hash.Aggregate(retval, (current, b) => current + Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0'));
+                            retrieval = sha5.Hash.Aggregate(retrieval, (current, b) => current + Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0'));
                             sha5.Clear();
                             #endregion
                             break;
                         }
                     case HashAlgorithmKinds.Sha1:
                         {
-                            #region [Sha1]
+                            #region sha1
                             SHA1 sha1 = new SHA1Managed();
                             sha1.TransformFinalBlock(data, 0, data.Length);
-                            retval = sha1.Hash.Aggregate(retval, (current, b) => current + Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0'));
+                            retrieval = sha1.Hash.Aggregate(retrieval, (current, b) => current + Convert.ToString(b, 16).ToUpper(CultureInfo.InvariantCulture).PadLeft(2, '0'));
                             sha1.Clear();
                             #endregion
-
                             break;
                         }
                     default:
@@ -212,7 +200,7 @@ namespace Smart.Net45.Extends
                         }
                 }
             }
-            return retval;
+            return retrieval;
         }
         /// <summary>  
         /// DES加密算法
@@ -266,6 +254,28 @@ namespace Smart.Net45.Extends
                 ms.Close();
                 return str;
             }
+        }
+
+        /// <summary>
+        /// rsa加密
+        /// </summary>
+        /// <param name="pToDecrypt"></param>
+        /// <param name="sKey"></param>
+        /// <returns></returns>
+        public static string RsaEncrypt(this string pToDecrypt, string sKey)
+        {
+            return RsaHelper.Encrypt(pToDecrypt, sKey);
+        }
+
+        /// <summary>
+        /// rsa解密
+        /// </summary>
+        /// <param name="pToDecrypt"></param>
+        /// <param name="sKey"></param>
+        /// <returns></returns>
+        public static string RsaDecrypt(this string pToDecrypt, string sKey)
+        {
+            return RsaHelper.Decrypt(pToDecrypt, sKey);
         }
         #endregion
 
@@ -371,6 +381,7 @@ namespace Smart.Net45.Extends
         {
             return byte.TryParse(value, out _);
         }
+
         /// <summary>
         /// 判断是否为IP地址
         /// </summary>
@@ -563,7 +574,7 @@ namespace Smart.Net45.Extends
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static string ToHexString(this string str)
+        public static string ToHexString( this string str)
         {
             var by = System.Text.Encoding.Default.GetBytes(str);
             return by.ToHexString();
@@ -578,7 +589,8 @@ namespace Smart.Net45.Extends
             str = Regex.Replace(str, @"<[^>]*>", "", RegexOptions.IgnoreCase);
             return str;
         }
-        #region [切片]
+
+        #region [Slice]
         /// <summary>
         /// 切片slice
         /// </summary>
@@ -588,6 +600,37 @@ namespace Smart.Net45.Extends
         public static string SliceExt(this string str, string format)
         {
             return str.SliceExt<char>(format).Join("");
+        }
+
+        #endregion
+
+        #region [FirstChar]
+
+        /// <summary>
+        /// 首字母小写写
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string FirstCharToLower(this string input)
+        {
+            if (input.IsNullOrEmpty())
+                return input;
+            var str = input.First().ToString().ToLower() + input.Substring(1);
+            return str;
+        }
+
+        /// <summary>
+        /// 首字母大写
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string FirstCharToUpper(this string input)
+        {
+            if (input.IsNullOrEmpty())
+                return input;
+            var str = input.First().ToString().ToUpper() + input.Substring(1);
+            return str;
+
         }
 
         #endregion
