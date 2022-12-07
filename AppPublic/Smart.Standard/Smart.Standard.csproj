@@ -25,7 +25,7 @@
     <PackageReference Include="Dapper" Version="1.50.4" />
     <PackageReference Include="JWT" Version="3.1.1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="PinYinConverterCore" Version="1.0.2" />
     <PackageReference Include="SharpZipLib.NETStandard" Version="1.0.7" />
     <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
